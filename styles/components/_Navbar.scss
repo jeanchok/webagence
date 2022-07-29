@@ -1,0 +1,55 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    flex: 2;
+    margin-right: -74px;
+
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        & li {
+            display: flex;
+            padding: 20px;
+            padding-top: 58px;
+            text-decoration: none;
+            max-width: 150px;
+            margin: auto;
+            padding-left: 10px;
+        }
+
+        & a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.829);
+            white-space: nowrap;
+            font-weight: 500;
+            font-size: 20px;
+            transition: 0.5s;
+
+            &:hover {
+                color: white;
+                transition: 0.5s;
+            }
+        }
+
+    }
+}
+
+.navbarContainer {
+    display: flex;
+    margin: auto;
+    max-width: 1080px;
+    overflow: hidden;
+    padding-bottom: 40px;
+    max-width: 1080px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 1080px;
+        border-top: 1px solid #FFFFFF;
+        top: 142px;
+    }
+}

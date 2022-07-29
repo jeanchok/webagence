@@ -1,0 +1,245 @@
+.section2 {
+    margin-top: 400px;
+}
+
+.header_textContainer {
+    padding: 0;
+
+    & h1 {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 98px;
+        padding-top: 96px;
+        color: #FFFFFF;
+    }
+
+    & p {
+        margin-top: 50px;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        color: $pink ;
+        white-space: nowrap;
+    }
+
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// span {
+
+//     margin-top: 128px;
+
+// }
+
+.dot1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 128px;
+    display: inline-block;
+
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 5s;
+
+    background: linear-gradient(180deg, rgba(247, 247, 247, 0.24) 0%, rgba(247, 247, 247, 0) 100%);
+}
+
+.dot2 {
+    width: 50px;
+    height: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(255, 96, 96, 0.48);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+//Section 2 
+
+.section2 {
+    &__img {
+        height: 501px;
+        z-index: -1;
+        margin: auto;
+        display: flex;
+    }
+
+    &__container {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+        margin-bottom: 400px;
+
+
+
+        &--dotsContainer {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        &--menu {
+            padding-right: 35px;
+            border-right: 1px solid rgb(224, 224, 224);
+            height: 100%;
+            margin-top: 6px;
+        }
+
+        &--textContainer {
+            align-items: center;
+            padding-left: 35px;
+
+
+            h2 {
+                margin-bottom: 25px;
+                font-weight: 700;
+                font-size: 64px;
+                color: $pink;
+
+            }
+        }
+    }
+
+    ul {
+        margin-left: 20px;
+        min-width: 110px;
+    }
+
+    li {
+        list-style-type: none;
+        margin-top: 15px;
+        height: 25px;
+
+        .activeButtonS2 {
+            font-weight: 700;
+        }
+    }
+
+    button {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+
+
+
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.dotactive {
+    background-color: $pink;
+
+}
+
+//Section 3
+
+.section3 {
+    h2 {
+        margin-bottom: 25px;
+        font-weight: 700;
+        font-size: 64px;
+        color: $pink;
+    }
+}
+
+.projectContainer {
+
+
+    &__Title {
+        top: 30px;
+        color: white;
+        font-weight: 700;
+        font-size: 48px;
+        left: 60px;
+        position: absolute;
+    }
+
+    &__Languages {
+        top: 100px;
+        left: 60px;
+        position: absolute;
+        font-weight: 600;
+        font-size: 24px;
+        color: white;
+        background: rgba(217, 217, 217, 0.7);
+        border-radius: 10px;
+        padding: 10px 15px;
+    }
+
+    &__Infos {
+        top: 170px;
+        left: 60px;
+        position: absolute;
+        width: 50%;
+        font-weight: 500;
+        font-size: 32px;
+        color: white;
+    }
+
+    a {
+
+        position: absolute;
+        top: 410px;
+        left: 60px;
+    }
+}
+
+.alice-carousel__dots-item {
+    background-color: $pinklight  !important;
+}
+
+.alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active {
+    background-color: $pink  !important;
+}
+
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+    color: $pink  !important;
+    font-size: 30px;
+}
+
+.sliderimg {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}

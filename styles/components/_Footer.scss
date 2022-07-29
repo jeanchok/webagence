@@ -1,0 +1,102 @@
+/* Footer */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    height: 254px;
+
+    background: linear-gradient(180deg, rgba(243, 243, 243, 0) 0%, rgba(218, 218, 218, 0.48) 100%);
+}
+
+.Footer__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+
+    a {
+        padding-top: 20px;
+    }
+}
+
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    padding-bottom: 20px;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin: 5px;
+    transition: 1s;
+}
+
+.social-links a {
+    text-decoration: none;
+    width: 0px;
+    overflow: hidden;
+    transition: 1s;
+    text-align: center;
+    color: black;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.social-btn:hover a {
+    padding: 2px;
+    width: max-content;
+    font-size: 20px;
+}
+
+
+.social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 1s;
+    text-align: center;
+}
+
+.social-btn:hover {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.social-btn:hover span {
+    padding: 2px;
+    width: max-content;
+    font-size: 20px;
+}
+
+#twitter svg {
+    fill: #1da1f2;
+}
+
+#linkedin svg {
+    fill: #0e76a8;
+    padding-bottom: 5px;
+}
+
+#github {
+    fill: #333;
+}
