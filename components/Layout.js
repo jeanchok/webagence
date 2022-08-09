@@ -6,17 +6,17 @@ import Fullpage, { FullpageSection, FullPageSections } from '@ap.cx/react-fullpa
 const Layout = ({ children }) => {
     return (
         <div className="scrollContainer">
-            <Fullpage>
-                <FullPageSections>
+            {/* <Fullpage>
+                <FullPageSections> */}
 
 
-                    <main>
-                        {children}
-                    </main>
+            <main>
+                {children}
+            </main>
 
 
-                </FullPageSections>
-            </Fullpage>
+            {/* </FullPageSections>
+            </Fullpage> */}
         </div >
     );
 };

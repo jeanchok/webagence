@@ -181,8 +181,6 @@
 }
 
 .projectContainer {
-
-
     &__Title {
         top: 30px;
         color: white;
@@ -242,4 +240,9 @@
     height: 500px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.lastIndexSection {
+    display: flex;
+    flex-direction: column;
 }

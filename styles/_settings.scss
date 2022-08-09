@@ -62,6 +62,25 @@ $pinklight : #ffb6b6;
     }
 }
 
+.scrollToTop {
+    justify-content: center;
+    display: flex;
+    font-size: 50px;
+    cursor: pointer;
+    color: $pink;
+    transition: all 0.5s ease;
+    transform: scale(1);
+    color: $pink  !important;
+    left: 0 !important;
+    bottom: 30px !important;
+
+    &:hover {
+        color: $pinklight;
+        transition: all 0.5s ease;
+        transform: scale(1.1) perspective(1px)
+    }
+}
+
 /* Responsive */
 $breakpoints: (
     mobileS: 347px,
