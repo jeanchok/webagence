@@ -27,37 +27,37 @@ export default function Home() {
     if (section2State === 1) {
       console.log(section2State);
       console.log("1");
-      setActiveTitle("Conseils");
-      setActiveText("Voici les conseils que l'on va donner : Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. ")
+      setActiveTitle("Design");
+      setActiveText("Vous avez une idée de site web ? Nous sommes là pour en réaliser la maquette ! Grâce à notre expertise nous pourrons trouver ensemble le design qui vous convient et qui sera le plus adapté à votre activité.")
     } if (section2State === 2) {
       console.log(section2State);
       console.log("2");
-      setActiveTitle("Maquettes");
-      setActiveText("Voici les maquette que l'on fera : Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. ")
+      setActiveTitle("Création de site");
+      setActiveText("Vous souhaitez un site web pour vous ou votre entreprise ? Que ce soit un site vitrine, un blog ou un site sur-mesure, nous pouvons le réaliser. Nous nous adaptons selon vos envies et votre budget pour donner vie à vos projets.")
     } if (section2State === 3) {
       console.log(section2State);
       console.log("3");
-      setActiveTitle("Création");
-      setActiveText("Voici les Création que l'on fera : Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. ")
+      setActiveTitle("Hébergement");
+      setActiveText("Nous hébergeons sur nos serveurs votre site web. C’est parfois difficile de gérer sur plusieurs plateformes un seul site web c’est donc pour cela que nous proposons cette offre à 360°.")
     }
     if (section2State === 4) {
       console.log(section2State);
       console.log("4");
       setActiveTitle("Maintenance");
-      setActiveText("Voici les Maintenance que l'on fera : Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. ")
+      setActiveText("Vous souhaitez résoudre des problèmes ou effectuer des améliorations sur votre site web ? Nous avons les compétences nécessaires : Wordpress, Javascript, React, Node.js… N’hésitez pas à nous contacter pour en discuter !")
     }
     if (section2State === 5) {
       console.log(section2State);
       console.log("5");
-      setActiveTitle("Web App");
-      setActiveText("Voici les Web App que l'on fera : Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. ")
+      setActiveTitle("Conseils");
+      setActiveText("Vous souhaitez concrétiser votre projet mais quelques interrogations demeurent ? Nous pouvons vous conseiller pour vous apporter les clés nécessaires à sa réalisation grâce à notre expertise du monde du web.")
     }
   }
 
 
   return (
     <>
-
+      <Head />
       {/* <FullpageSection className='maxWidthnone'> */}
       <Header />
       <section className='header_textContainer'>
@@ -91,19 +91,19 @@ export default function Home() {
           <div className='section2__container--menu'>
             <ul>
               <li>
-                <button className={(section2State === 1) ? 'activeButtonS2' : null} onClick={() => setSection2State(1)}>Conseils</button>
+                <button className={(section2State === 1) ? 'activeButtonS2' : null} onClick={() => setSection2State(1)}>Design</button>
               </li>
               <li>
-                <button className={(section2State === 2) ? 'activeButtonS2' : null} onClick={() => setSection2State(2)}>Maquettage</button>
+                <button className={(section2State === 2) ? 'activeButtonS2' : null} onClick={() => setSection2State(2)}>Création</button>
               </li>
               <li>
-                <button className={(section2State === 3) ? 'activeButtonS2' : null} onClick={() => setSection2State(3)}>Création</button>
+                <button className={(section2State === 3) ? 'activeButtonS2' : null} onClick={() => setSection2State(3)}>Hébergement</button>
               </li>
               <li>
                 <button className={(section2State === 4) ? 'activeButtonS2' : null} onClick={() => setSection2State(4)}>Maintenance</button>
               </li>
               <li>
-                <button className={(section2State === 5) ? 'activeButtonS2' : null} onClick={() => setSection2State(5)}>Web App</button>
+                <button className={(section2State === 5) ? 'activeButtonS2' : null} onClick={() => setSection2State(5)}>Conseils</button>
               </li>
             </ul>
           </div>
@@ -112,18 +112,17 @@ export default function Home() {
             <p>{activeText}</p>
           </div>
         </div>
+        <div className="line"></div>
         <ScrollButton />
-      </section>
-      {/* </FullpageSection> */}
 
-      {/* Section 3 Slider  */}
-      {/* <FullpageSection> */}
+      </section>
       <section className='section3'>
         <h2>Nos projets</h2>
         <AliceCarousel autoPlay autoPlayInterval="3000">
           {projects.map((project) => (
             <div key={project.id} className='projectContainer'>
               <img className="sliderimg" src={path + project.img}></img>
+              <div className="projectContainer__Overlay"></div>
               <h3 className='projectContainer__Title'>{project.title}</h3>
               <h4 className='projectContainer__Languages'>{project.languages}</h4>
               <p className='projectContainer__Infos'>{project.infos}</p>
@@ -142,7 +141,7 @@ export default function Home() {
       {/* <FullpageSection className='maxWidthnone lastIndexSection' > */}
       <ContactUs />
       {/* <ScrollButton /> */}
-      <Footer />
+      {/* <Footer /> */}
       {/* </FullpageSection> */}
       {/* </FullPageSections>
       </Fullpage> */}

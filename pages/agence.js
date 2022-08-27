@@ -4,11 +4,48 @@ import Header from '../components/Header';
 
 const agence = () => {
     return (
-        <div>
+        <>
             <Header />
-            <h1>L'agence</h1>
+            <section className='header_textContainer'>
+
+                <div className='header_textContainer--flex'>
+                    <h1>
+                        L'agence Web<br />
+                        à l’échelle<br />
+                        humaine.
+                    </h1>
+                    <span className="dot1">
+                        <span className="dot2"></span>
+                    </span>
+                </div>
+                <p>Découvrez notre agence</p>
+            </section >
+            <section className='agenceTexte'>
+                <h2>
+                    Webzh Agence
+                </h2>
+                <p>
+                    Notre agence web basée en Bretagne. Etant tous les 2 développeurs de métier, notre champ d’action gravite autour de la création de sites et d’applications webs. Nous sommes une Agence familiale à échelle humaine très à l’écoute de nos clients et de leurs besoins.
+                </p>
+            </section>
+            <section className='agenceImages'>
+                <div className='agenceImages__Card'>
+                    <div className='agenceImages__Container'>
+                        <img className='agenceImages__Container--img' src="/img/imgSite/1651058775675 (1).jpg" alt="photo développeur jean" />
+                    </div>
+                    <h3>Jean Choquet</h3>
+                    <p>Développeur Full Stack</p>
+                </div>
+                <div className='agenceImages__Card'>
+                    <div className='agenceImages__Container'>
+                        <img className='agenceImages__Container--img' src="/img/imgSite/1651058775675 (1).jpg" alt="photo développeur jean" />
+                    </div>
+                    <h3>Chloé Choquet</h3>
+                    <p>Développeur Front end</p>
+                </div>
+            </section>
             <ContactUs />
-        </div>
+        </>
     );
 };
 

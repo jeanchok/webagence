@@ -1,13 +1,14 @@
 export const projects = [
     {
         id: 1,
-        title: "Casta",
+        title: "D2M",
         date: "Janvier 2020",
-        languages: ["React", "Php", "Sass"],
+        languages: ["Wordpress"],
         infos:
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-        img: "/img/projet-2.jpg",
-        link: "http://www.google.com",
+            "Réalisation de l'intégralité d'un site vitrine pour un revendeur de machine à bois, Laillé (35).",
+        img: "/img/d2m_img.jpg",
+        mockup: "/img/d2m_mockup.png",
+        link: "https://d2m-machine-bois.fr/",
     },
     {
         id: 2,

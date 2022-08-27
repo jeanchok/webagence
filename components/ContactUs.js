@@ -6,7 +6,7 @@ const ContactUs = () => {
     return (
         <div className='ContactUs__Container'>
             <div className='ContactUs__Container--text'>
-                {/* <i class="fa fa-comments-o" aria-hidden="true"></i> */}
+                {/* <i className="fa fa-comments-o" aria-hidden="true"></i> */}
 
                 <h3 className='ContactUs__Container--text-title'> <FontAwesomeIcon icon={faComment} />  Besoin d'informations supplémentaires ?</h3>
                 <h3 className='ContactUs__Container--text-title'>Contactez-nous !</h3>

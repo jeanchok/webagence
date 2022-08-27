@@ -8,7 +8,8 @@ const Header = () => {
             </div>
             <div className='navbarContainer'>
                 <div className='logoContainer'>
-                    <p className='Logo'>Logo</p>
+                    <img className='logoContainer__img' src=".\img\imgSite\logo webzh white.png" alt="logo webzh" />
+                    <p className='logoContainer__text'>Webzh Agence</p>
                 </div>
                 <Navbar />
             </div>

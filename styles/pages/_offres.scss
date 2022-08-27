@@ -1,0 +1,54 @@
+.offresSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+
+
+    &__Card {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+
+        &--Text {
+            display: flex;
+            flex-direction: column;
+
+            &--right {
+                margin: auto;
+                margin-left: 25px;
+
+                h2 {
+                    text-align: left;
+                    @include titlePink
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+
+            &--left {
+                margin: auto;
+                margin-right: 25px;
+
+                h2 {
+                    text-align: right;
+                    @include titlePink
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+
+
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}

@@ -24,8 +24,8 @@ const projets = () => {
                 <div className='header_textContainer--flex'>
                     <h1>
                         Découvrez <br />
-                        les différents projets <br />
-                        que nous avons réalisé.
+                        les projets que nous<br />
+                        avons réalisé.
                     </h1>
 
                 </div>
@@ -34,28 +34,32 @@ const projets = () => {
             {/* </FullpageSection> */}
 
             {/* <section className='sectionProjets'> */}
-            {projects.map((project) => (
-                // <FullpageSection>
-                <>
-                    <div key={project.id} className='projectContainerProjets'>
-                        <img className="sliderimg" src={path + project.img}></img>
-                        <h3 className='projectContainerProjets__Title'>{project.title}</h3>
-                        <h4 className='projectContainerProjets__Languages'>{project.languages}</h4>
-                        <p className='projectContainerProjets__Infos'>{project.infos}</p>
-                        <Link href="projects/[id]" as={"projects/" + project.id}>
-                            <a className='buttonFront'>
-                                Voir le projet
-                            </a>
-                        </Link>
-                    </div>
-                    <ScrollButton />
-                </>
-                // </FullpageSection>
-            ))}
-            {/* </section> */}
+            <section className='projectPage'>
+                {projects.map((project) => (
+
+                    <>
+                        <div key={project.id} className='projectPageContainer'>
+                            <img className={"projectPageContainer__Mockup"} src={path + project.mockup}></img>
+                            <div className='projectPageContainer__Text'>
+                                <h3 className='projectPageContainer__Text--Title'>{project.title}</h3>
+                                <h4 className='projectPageContainer__Text--Languages'>{project.languages}</h4>
+                                <p className='projectPageContainer__Text--Infos'>{project.infos}</p>
+                                {/* <Link href="projects/[id]" as={"projects/" + project.id}> */}
+                                <a className='buttonFront' href={project.link} target="_blank" rel="noopener noreferrer">
+                                    Voir le projet
+                                </a>
+                                {/* </Link> */}
+                            </div>
+                        </div>
+
+                    </>
+
+                ))}
+                <ScrollButton />
+            </section>
+
             {/* <FullpageSection className='maxWidthnone lastIndexSection' > */}
             <ContactUs />
-            <Footer />
             {/* </FullpageSection> */}
         </>
     );

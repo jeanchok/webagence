@@ -1,86 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-body {
-    background: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-nav,
-.Footer__container,
-.header_textContainer {
-    margin: auto;
-    max-width: 1080px;
-    padding: 0px 40px 0px 40px;
-}
-
-section {
-    margin: auto;
-    max-width: 1080px;
-    scroll-snap-align: start;
-    height: 100%;
-    position: relative;
-}
-
-$pink : #FF6060;
-$pinklight : #ffb6b6;
-
-// Animation scroll
-
-// .scrollContainer {
-//     overflow: hidden;
-//     position: relative;
-//     height: 100vh;
-//     width: 100%;
-//     overflow-y: scroll;
-//     scroll-snap-type: y mandatory;
-//     scroll-snap-align: start;
-//     scroll-behavior: smooth;
-// }
-
-// Button
-
-.maxWidthnone {
-    max-width: none !important;
-}
-
-.buttonFront {
-    background: #FFFFFF;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 22px;
-    text-align: center;
-    text-decoration: none;
-    color: $pink;
-    padding: 10px 20px;
-    transition: 0.5s;
-    cursor: pointer;
-
-    &:hover {
-        background: $pink;
-        color: white;
-        transition: 0.5s;
-    }
-}
-
-.scrollToTop {
-    justify-content: center;
-    display: flex;
-    font-size: 50px;
-    cursor: pointer;
-    color: $pink;
-    transition: all 0.5s ease;
-    transform: scale(1);
-    color: $pink  !important;
-    left: 0 !important;
-    bottom: 30px !important;
-
-    &:hover {
-        color: $pinklight;
-        transition: all 0.5s ease;
-        transform: scale(1.1) perspective(1px)
-    }
-}
-
 /* Responsive */
 $breakpoints: (
     mobileS: 347px,
@@ -116,4 +35,120 @@ $breakpoints: (
     @media screen and (max-width: map-get($breakpoints, mobileS)) {
         @content;
     }
+}
+
+body {
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+
+
+}
+
+nav,
+.Footer__container,
+.header_textContainer {
+    margin: auto;
+    max-width: 1080px;
+    padding: 0px 40px 0px 40px;
+}
+
+section {
+    margin: auto;
+    max-width: 1080px;
+    scroll-snap-align: start;
+    height: 100%;
+    position: relative;
+
+    @include tablette-only {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    @include mobile() {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    @include mobileS {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+$pink : #FF6060;
+$pinklight : #ffb6b6;
+
+.line {
+    width: 50%;
+    border-bottom: 1px solid $pinklight;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.maxWidthnone {
+    max-width: none !important;
+}
+
+.buttonFront {
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: $pink;
+    padding: 10px 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: $pink solid 1px;
+
+    &:hover {
+        background: $pink;
+        color: white;
+        transition: 0.5s;
+        border: #ffffff solid 1px;
+    }
+}
+
+.scrollToTop {
+    justify-content: center;
+    display: flex;
+    font-size: 50px;
+    cursor: pointer;
+    color: $pink;
+    transition: all 0.5s ease;
+    transform: scale(1);
+    color: $pink  !important;
+    left: 0 !important;
+    bottom: 30px !important;
+    margin-bottom: 15px !important;
+
+    //margin-right: 25px !important;
+    @include tablette-only {
+        display: none;
+    }
+
+    @include mobile() {
+        display: none;
+    }
+
+    @include mobileS {
+        display: none;
+    }
+
+    &:hover {
+        color: $pinklight;
+        transition: all 0.5s ease;
+        transform: scale(1.1) perspective(1px);
+        //margin-right: 25px !important;
+    }
+}
+
+@mixin titlePink {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 64px;
+    color: $pink;
 }

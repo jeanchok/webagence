@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, fatiktok } from '@fortawesome/free-solid-svg-icons'
 
@@ -6,8 +7,6 @@ const Footer = () => {
     return (
         <footer>
             <div className='Footer__container'>
-                <p>© Créa'Web 2022 - Tous droits réservés</p>
-                <a href='/mentionslegales'>Mentions Légales - mettre liens -</a>
                 <div className='social-links'>
 
                     <div className='social-btn flex-center' id="twitter">
@@ -33,6 +32,9 @@ const Footer = () => {
                         <a href='https://github.com/jeanchok'><span>jeanchok</span></a>
                     </div>
                 </div>
+                <p>© Webzh Agence 2022 - Tous droits réservés</p>
+                <Link href="/mentionslegales"><a className='mentionsLink' href='/mentionslegales'>Mentions Légales</a></Link>
+
             </div>
         </footer>
     );

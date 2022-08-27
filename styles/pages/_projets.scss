@@ -1,50 +1,79 @@
-.sectionProjets {
-    h2 {
-        margin-bottom: 25px;
-        font-weight: 700;
-        font-size: 64px;
-        color: $pink;
+.projectPageContainer:nth-of-type(odd) {
+
+    //background: rgb(2, 0, 36);
+    //background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(68, 121, 9, 1) 35%, rgba(0, 255, 196, 1) 100%);
+
+    flex-direction: row-reverse;
+    text-align: right;
+
+    img {
+        margin-right: 20px;
     }
 }
 
-.projectContainerProjets {
+.projectPageContainer:nth-of-type(even) {
+
+    //background: rgb(2, 0, 36);
+    //background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(68, 121, 9, 1) 35%, rgba(0, 255, 196, 1) 100%);
+
+    flex-direction: row;
+
+    text-align: left;
 
 
-    &__Title {
-        top: 30px;
+    img {
+        margin-left: 20px;
+    }
+
+}
+
+.projectPage {
+    margin-top: 150px;
+
+    .projectPageContainer {
+        display: flex;
+        margin-bottom: 40px;
+        border-radius: 5px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+
+        border-radius: 5px;
+        background: #ffffff;
+        box-shadow: 20px 20px 60px #d9d9d9,
+            -20px -20px 60px #ffffff;
+    }
+
+    h3 {
         color: $pink;
-        font-weight: 700;
-        font-size: 48px;
-        left: 60px;
-
+        font-size: 36px;
+        margin-bottom: 10px;
     }
 
-    &__Languages {
-        top: 100px;
-        left: 60px;
-
-        font-weight: 600;
-        font-size: 24px;
-        color: white;
-        background: rgba(217, 217, 217, 0.7);
-        border-radius: 10px;
-        padding: 10px 15px;
+    h4 {
+        color: $pinklight;
+        margin-bottom: 8px;
     }
 
-    &__Infos {
-        top: 170px;
-        left: 60px;
+    p {
+        margin-bottom: 24px;
+    }
 
-        width: 50%;
-        font-weight: 500;
-        font-size: 32px;
-        color: black;
+    img {
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+
+        @include mobile {
+            width: 100px
+        }
+
+        @include mobileS {
+            width: 100px
+        }
     }
 
     a {
-
-        position: absolute;
-        top: 410px;
-        left: 60px;
+        font-size: 16px;
     }
+
 }

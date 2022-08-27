@@ -1,4 +1,27 @@
 /*Contact */
+
+h1 {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+    padding-top: 96px;
+    color: #FFFFFF;
+}
+
+.contactInfo {
+    h3 {
+        font-weight: 600;
+        font-size: 36px;
+        color: $pink;
+        margin-left: 40px;
+    }
+}
+
+
+.buttonContact {
+    margin-top: 24px;
+}
+
 .contactContainer {
     max-width: 1280px;
     margin: auto;
@@ -10,6 +33,22 @@
     margin: auto;
     animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     width: 50%;
+
+    @include tablette-only {
+        width: 80%;
+    }
+
+    @include mobile() {
+        width: 80%;
+
+    }
+
+    @include mobileS {
+
+        width: 80%;
+
+    }
+
 }
 
 .formInput {
@@ -22,7 +61,7 @@
     box-shadow: -1px 1px 4px 0px rgba(255, 255, 255, 0.35) inset;
     -webkit-box-shadow: -1px 1px 4px 0px rgba(255, 255, 255, 0.35) inset;
     -moz-box-shadow: -1px 1px 4px 0px rgba(255, 255, 255, 0.35) inset;
-    border-radius: 10px;
+    border-radius: 5px;
     padding-left: 15px;
 }
 
@@ -40,6 +79,10 @@
     min-height: 100px;
     margin-top: 20px;
     padding-top: 10px;
+}
+
+#contact-form textarea::placeholder {
+    font-family: Montserrat;
 }
 
 // #contact-form button {
@@ -77,15 +120,35 @@
 .contactInfo {
     display: flex;
     flex-direction: column;
-    margin: auto;
     width: 45%;
     animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+    margin: auto;
+    margin-top: 40px;
+
+    @include tablette-only {
+        width: 80%;
+    }
+
+    @include mobile() {
+        width: 80%;
+
+    }
+
+    @include mobileS {
+
+        width: 80%;
+
+    }
+
+
 }
+
 
 .contactInfo a,
 .competencesContainer a {
     text-decoration: none;
-    color: white;
+    color: $pink;
     font-size: 22px;
     margin-top: 20px;
     transition: all 0.35s ease;
@@ -93,7 +156,7 @@
 
 .contactInfo a:hover,
 .competencesContainer a:hover {
-    color: #CCA43B;
+    color: $pinklight;
 }
 
 .contactInfo p {
@@ -102,8 +165,8 @@
 }
 
 .contactInfo span {
-    color: white;
-    font-size: calc(10px + 2vmin);
+    color: $pink;
+    font-size: 22px;
     margin-top: 20px;
     margin-left: 20px;
     text-align: left;
@@ -115,7 +178,31 @@
     margin-bottom: 20px;
     justify-content: space-between;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 80px;
+
+    @include tablette-only {
+        flex-direction: column;
+        margin-top: 150px;
+
+    }
+
+    @include mobile() {
+        flex-direction: column;
+
+    }
+
+    @include mobileS {
+
+        flex-direction: column;
+
+    }
+
+    .col textarea,
+    .col input,
+    .col-6 input {
+        border: $pink solid 2px;
+        border-radius: 5px;
+    }
 }
 
 .contactForm {

@@ -5,7 +5,8 @@ import Fullpage, { FullpageSection, FullPageSections } from '@ap.cx/react-fullpa
 
 const Layout = ({ children }) => {
     return (
-        <div className="scrollContainer">
+        <>
+            {/* <div className="scrollContainer"> */}
             {/* <Fullpage>
                 <FullPageSections> */}
 
@@ -13,11 +14,12 @@ const Layout = ({ children }) => {
             <main>
                 {children}
             </main>
-
+            <Footer />
 
             {/* </FullPageSections>
             </Fullpage> */}
-        </div >
+            {/* </div > */}
+        </>
     );
 };
 

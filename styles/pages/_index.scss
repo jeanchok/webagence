@@ -1,7 +1,3 @@
-.section2 {
-    margin-top: 400px;
-}
-
 .header_textContainer {
     padding: 0;
 
@@ -11,6 +7,24 @@
         line-height: 98px;
         padding-top: 96px;
         color: #FFFFFF;
+
+        @include tablette-only {
+            padding-top: 0;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        @include mobile() {
+            padding-top: 0;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        @include mobileS {
+            padding-top: 0;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
 
     & p {
@@ -20,8 +34,20 @@
         font-size: 32px;
         line-height: 39px;
         text-align: center;
-        color: $pink ;
-        white-space: nowrap;
+        color: white;
+        //white-space: nowrap;
+
+        // @include tablette-only {
+        //     white-space: wrap;
+        // }
+
+        // @include mobile() {
+        //     white-space: wrap;
+        // }
+
+        // @include mobileS {
+        //     white-space: wrap;
+        // }
     }
 
     &--flex {
@@ -49,6 +75,18 @@
     -webkit-animation-duration: 5s;
 
     background: linear-gradient(180deg, rgba(247, 247, 247, 0.24) 0%, rgba(247, 247, 247, 0) 100%);
+
+    @include tablette-only {
+        display: none;
+    }
+
+    @include mobile {
+        display: none;
+    }
+
+    @include mobileS {
+        display: none;
+    }
 }
 
 .dot2 {
@@ -60,12 +98,19 @@
     background: rgba(255, 96, 96, 0.48);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+    @include tablette-only {
+        display: none;
+    }
 }
 
 
 
 @-webkit-keyframes orbit {
     from {
+        -webkit-transform: rotate(0deg)
+    }
+
+    70% {
         -webkit-transform: rotate(0deg)
     }
 
@@ -89,7 +134,7 @@
         width: 100%;
         margin: auto;
         justify-content: space-between;
-        margin-bottom: 400px;
+        margin-bottom: 100px;
 
 
 
@@ -123,7 +168,7 @@
 
     ul {
         margin-left: 20px;
-        min-width: 110px;
+        min-width: 120px;
     }
 
     li {
@@ -173,6 +218,7 @@
 
 .section3 {
     h2 {
+        margin-top: 50px;
         margin-bottom: 25px;
         font-weight: 700;
         font-size: 64px;
@@ -198,7 +244,7 @@
         font-size: 24px;
         color: white;
         background: rgba(217, 217, 217, 0.7);
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 10px 15px;
     }
 
@@ -206,10 +252,28 @@
         top: 170px;
         left: 60px;
         position: absolute;
-        width: 50%;
+        width: 80%;
+        text-align: justify;
         font-weight: 500;
         font-size: 32px;
         color: white;
+    }
+
+    &__Overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        transition: .5s ease;
+        opacity: 1;
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+        height: 100%;
+        text-align: center;
     }
 
     a {
@@ -239,7 +303,7 @@
     width: 100%;
     height: 500px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .lastIndexSection {
