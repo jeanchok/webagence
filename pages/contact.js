@@ -43,13 +43,15 @@ const contact = () => {
                             <span className="dot2"></span>
                         </span>
                     </div>
-                    <p>Nous sommes à votre disposition pour toutes Informations supplémentaires.</p>
+                    <p className='contactP'>Nous sommes à votre disposition pour toutes Informations supplémentaires.</p>
                 </section >
 
                 <section className='contactFormContainer'>
-
                     <form className='contactForm' id='contact-form' ref={form} onSubmit={sendEmail} noValidate>
                         {/* Row 1 of form */}
+
+                        <h2>Remplissez le formulaire ci-dessous pour nous contacter.</h2>
+
                         <div className='formRow'>
                             <div className='col-6'>
                                 <input

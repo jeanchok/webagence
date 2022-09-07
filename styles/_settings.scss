@@ -37,11 +37,23 @@ $breakpoints: (
     }
 }
 
+/*Media Queries - MobileS*/
+@mixin LowerThanTablette {
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
+
+html {
+    overflow-x: hidden;
+    position: relative;
+}
+
 body {
     background: white;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-
+    position: relative;
 
 }
 

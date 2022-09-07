@@ -66,53 +66,103 @@
     }
 }
 
-// .mobileMenu {
-//     display: none;
-// }
+.mobileMenu {
+    display: none;
+}
 
-// @media (max-width: 840px) {
-//     .snip1198 {
-//         display: none !important;
+@media (max-width: 840px) {
+    .container {
+        display: inline-block;
+        cursor: pointer;
 
-//     }
 
-//     .navbar {
-//         position: fixed;
-//         width: 100%;
-//         height: 100%;
-//         left: 0;
-//         top: 0;
-//         background: rgba(51, 51, 51, 0.7);
-//         z-index: 10;
-//         background: #000000d4;
+    }
 
-//         //z-index: 3;
-//         a,
-//         button {
-//             z-index: 11;
-//         }
-//     }
+    .navbar {
+        margin-right: 0;
+    }
 
-//     .navbar ul {
-//         flex-direction: column;
-//     }
+    .navbar button {
+        z-index: 11;
+        margin-left: 85%;
+        margin-top: 50px;
 
-//     .active {
-//         display: flex !important;
-//     }
+    }
 
-//     .mobileMenu {
-//         display: block;
-//         padding: 0;
-//         border: none;
-//         background: none;
-//         color: white;
-//         font-size: 40px;
-//         margin-top: 10px;
-//         margin-bottom: 10px;
-//         cursor: pointer;
-//         width: 35px;
-//         height: 40px;
-//         margin-left: 10px;
-//     }
-// }
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+        z-index: 10;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+        z-index: 12;
+    }
+
+    .change .bar2 {
+        opacity: 0;
+        z-index: 12;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+        z-index: 12;
+    }
+
+    .none {
+        display: none !important;
+    }
+
+    .snip1198 {
+        display: none !important;
+
+    }
+
+    .list {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(51, 51, 51, 0.7);
+        z-index: 10;
+        background: #000000d4;
+
+        //z-index: 3;
+        a,
+        button {
+            z-index: 11;
+        }
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .active {
+        display: flex !important;
+    }
+
+    .mobileMenu {
+        display: block;
+        padding: 0;
+        border: none;
+        background: none;
+        color: white;
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        width: 35px;
+        height: 40px;
+        margin-left: 10px;
+    }
+}

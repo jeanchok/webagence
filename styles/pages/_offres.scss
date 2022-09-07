@@ -11,6 +11,18 @@
         flex-direction: row;
         margin-top: 50px;
 
+        @include tablette-only {
+            flex-direction: column;
+        }
+
+        @include mobile() {
+            flex-direction: column;
+        }
+
+        @include mobileS {
+            flex-direction: column;
+        }
+
         &--Text {
             display: flex;
             flex-direction: column;
@@ -49,6 +61,11 @@
         img {
             width: 250px;
             height: 250px;
+
+            @include LowerThanTablette {
+                width: 100%;
+                object-fit: contain;
+            }
         }
     }
 }

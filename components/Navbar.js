@@ -12,11 +12,16 @@ const Navbar = () => {
         setMenuClass(!menuClass);
     }
     return (
-        <nav className="navbar">
-            {/* <button className="mobileMenu" onClick={changeClass}>
-                {menuClass ? <i className="fas fa-times">X</i> : <i className="fa fa-bars" aria-hidden="true">X</i>}
-            </button> */}
-            <ul className="list">
+
+
+        <nav className='navbar'>
+            <button className={!menuClass ? "mobileMenu container" : "mobileMenu container change"} onClick={changeClass}>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            <ul className={!menuClass ? 'none' : 'list'}>
+
                 <li className={router.pathname == "/" ? "activeLine" : ""}>
 
                     <Link href="/">
@@ -52,6 +57,7 @@ const Navbar = () => {
                 </li>
             </ul>
         </nav>
+
     );
 };
 

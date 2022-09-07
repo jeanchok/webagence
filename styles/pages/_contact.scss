@@ -126,6 +126,8 @@ h1 {
     margin: auto;
     margin-top: 40px;
 
+
+
     @include tablette-only {
         width: 80%;
     }
@@ -207,9 +209,19 @@ h1 {
 
 .contactForm {
     width: 55%;
+
+    h2 {
+        color: $pink;
+    }
 }
 
 .textContact {
     margin: auto;
     margin-top: 20px;
+}
+
+.contactP {
+    @include mobile {
+        display: none;
+    }
 }
