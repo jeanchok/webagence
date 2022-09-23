@@ -2,7 +2,7 @@ export const projects = [
     {
         id: 1,
         title: "D2M",
-        date: "Janvier 2020",
+        date: "Janvier 2022",
         languages: ["Wordpress"],
         infos:
             "Réalisation de l'intégralité d'un site vitrine pour un revendeur de machine à bois, Laillé (35).",
@@ -12,32 +12,13 @@ export const projects = [
     },
     {
         id: 2,
-        title: "Lyon Béton",
+        title: "Bulle de rêve",
         date: "Mars 2020",
-        languages: ["Symfony", "Vue"],
+        languages: ["Wordpress"],
         infos:
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-        img: "/img/projet-1.jpg",
-        link: "http://www.google.com",
-    },
-    {
-        id: 3,
-        title: "Everpost",
-        date: "Avril 2020",
-        languages: ["Wordpress", "Php", "React"],
-        infos:
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-        img: "/img/projet-3.jpg",
-        link: "http://www.google.com",
-    },
-    {
-        id: 4,
-        title: "Creative Dev",
-        date: "Juillet 2020",
-        languages: ["Vue", "Php"],
-        infos:
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-        img: "/img/projet-4.jpg",
-        link: "http://www.google.com",
-    },
+            "Refonte graphique et création de pages pour une masseuse indépendante, Elven (56).",
+        img: "/img/b2r.PNG",
+        mockup: "/img/b2r_mockup.png",
+        link: "http://bulledereve.fr/",
+    }
 ];

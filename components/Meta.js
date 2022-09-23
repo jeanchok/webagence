@@ -11,8 +11,8 @@ const Meta = ({ title, description }) => {
 };
 
 Meta.defaultProps = {
-    title: "CréaWeb, création de site web tout simplement",
-    description: "L'agence web familiale qui vous accompagne en toute simplicité.",
+    title: "Webzh Agence, création de site web tout simplement",
+    description: "L'agence web familiale bretonne qui vous accompagne en toute simplicité.",
 };
 
 export default Meta;

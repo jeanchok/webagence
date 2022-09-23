@@ -8,6 +8,7 @@
 
     img {
         margin-right: 20px;
+        margin-left: 20px;
     }
 }
 
@@ -23,6 +24,7 @@
 
     img {
         margin-left: 20px;
+        margin-right: 20px;
     }
 
 }
@@ -41,6 +43,17 @@
         background: #ffffff;
         box-shadow: 20px 20px 60px #d9d9d9,
             -20px -20px 60px #ffffff;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__Text {
+            @include mobile {
+                margin-right: 20px;
+            }
+        }
     }
 
     h3 {
@@ -64,11 +77,11 @@
         object-fit: cover;
 
         @include mobile {
-            width: 100px
+            width: 100%;
         }
 
         @include mobileS {
-            width: 100px
+            //width: 100px
         }
     }
 

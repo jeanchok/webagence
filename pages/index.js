@@ -11,12 +11,16 @@ import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import Fullpage, { FullpageSection, FullPageSections } from '@ap.cx/react-fullpage';
 import ScrollButton from '../components/ScrollButton';
+import { useInView } from "react-intersection-observer";
+
 
 export default function Home() {
   const [activeTitle, setActiveTitle] = useState("");
   const [activeText, setActiveText] = useState("");
   const [section2State, setSection2State] = useState(1);
-
+  const { ref, inView } = useInView({
+    threshold: 0
+  });
 
   useEffect(() => handleChange()
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -79,6 +83,7 @@ export default function Home() {
       {/* Section 2 Texte  */}
       {/* <FullpageSection> */}
       <section className="section2">
+        {console.log(inView, ref)}
         <img src={path + '/img/imgSite/laptop-2298286.png'} className='section2__img'></img>
         <div className='section2__container'>
           <div className='section2__container--dotsContainer'>
@@ -126,11 +131,9 @@ export default function Home() {
               <h3 className='projectContainer__Title'>{project.title}</h3>
               <h4 className='projectContainer__Languages'>{project.languages}</h4>
               <p className='projectContainer__Infos'>{project.infos}</p>
-              <Link href="projects/[id]" as={"projects/" + project.id}>
-                <a className='buttonFront'>
-                  Voir le projet
-                </a>
-              </Link>
+              <a className='buttonFront' href={project.link} target="_blank" rel="noopener noreferrer">
+                Voir le projet
+              </a>
             </div>
           ))}
         </AliceCarousel>

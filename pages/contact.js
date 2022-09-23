@@ -139,8 +139,8 @@ const contact = () => {
                                 <i className='fas fa-envelope'></i>
                             </span>
                             <span>
-                                <a href='mailto:jean.choquet@hotmail.fr'>
-                                    jean.choquet@hotmail.fr
+                                <a href='mailto:contact@jeanchoquet.fr'>
+                                    contact@jeanchoquet.fr
                                 </a>
                             </span>
                         </p>
