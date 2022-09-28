@@ -44,7 +44,7 @@ const Navbar = () => {
                 <li className={router.pathname == "/agence" ? "activeLine" : ""}>
                     <Link href="/agence">
                         <a className={router.pathname == "/agence" ? "active" : ""}>
-                            L'agence
+                            L&apos;agence
                         </a>
                     </Link>
                 </li>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import Link from "next/link";
 
 const Header = () => {
     return (
@@ -17,7 +18,7 @@ const Header = () => {
             <div className='navbarContainer'>
                 <div className='logoContainer'>
                     <img className='logoContainer__img' src=".\img\imgSite\logo webzh white.png" alt="logo webzh" />
-                    <a href='/' className='logoContainer__text'>Webzh Agence</a>
+                    <Link href='/' className='logoContainer__text'>Webzh Agence</Link>
                 </div>
                 <Navbar />
             </div>

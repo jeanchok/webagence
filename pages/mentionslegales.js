@@ -31,7 +31,7 @@ const mentionslegales = () => {
                     Siège social : 12-14, Rond-Point des Champs Elysées 75008 Paris
                     Représentant :  Mr Claudio Corbetta
                     Conception et réalisation
-                    IONOS SARL, société à responsabilité limitée, immatriculée sous le SIREN 431303775, est en activité depuis 22 ans. Implantée à SARREGUEMINES (57200), elle est spécialisée dans le secteur d'activité du traitement de données, hébergement et activités connexes. Sur l&apos;année 2019 elle réalise un chiffre d'affaires de 45 736 500,00 €.
+                    IONOS SARL, société à responsabilité limitée, immatriculée sous le SIREN 431303775, est en activité depuis 22 ans. Implantée à SARREGUEMINES (57200), elle est spécialisée dans le secteur d&apos;activité du traitement de données, hébergement et activités connexes. Sur l&apos;année 2019 elle réalise un chiffre d&apos;affaires de 45 736 500,00 €.
                     Britta SCHMIDT , Achim WEISS sont gérants de la société IONOS SARL.
 
 
