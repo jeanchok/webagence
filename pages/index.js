@@ -12,6 +12,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import Fullpage, { FullpageSection, FullPageSections } from '@ap.cx/react-fullpage';
 import ScrollButton from '../components/ScrollButton';
 import { useInView } from "react-intersection-observer";
+import Aos from 'aos';
 
 
 export default function Home() {
@@ -29,40 +30,39 @@ export default function Home() {
   const handleChange = () => {
 
     if (section2State === 1) {
-      console.log(section2State);
-      console.log("1");
+
       setActiveTitle("Design");
       setActiveText("Vous avez une idée de site web ? Nous sommes là pour en réaliser la maquette ! Grâce à notre expertise nous pourrons trouver ensemble le design qui vous convient et qui sera le plus adapté à votre activité.")
     } if (section2State === 2) {
-      console.log(section2State);
-      console.log("2");
+
       setActiveTitle("Création de site");
       setActiveText("Vous souhaitez un site web pour vous ou votre entreprise ? Que ce soit un site vitrine, un blog ou un site sur-mesure, nous pouvons le réaliser. Nous nous adaptons selon vos envies et votre budget pour donner vie à vos projets.")
     } if (section2State === 3) {
-      console.log(section2State);
-      console.log("3");
+
       setActiveTitle("Hébergement");
       setActiveText("Nous hébergeons sur nos serveurs votre site web. C’est parfois difficile de gérer sur plusieurs plateformes un seul site web c’est donc pour cela que nous proposons cette offre à 360°.")
     }
     if (section2State === 4) {
-      console.log(section2State);
-      console.log("4");
+
       setActiveTitle("Maintenance");
       setActiveText("Vous souhaitez résoudre des problèmes ou effectuer des améliorations sur votre site web ? Nous avons les compétences nécessaires : Wordpress, Javascript, React, Node.js… N’hésitez pas à nous contacter pour en discuter !")
     }
     if (section2State === 5) {
-      console.log(section2State);
-      console.log("5");
+
       setActiveTitle("Conseils");
       setActiveText("Vous souhaitez concrétiser votre projet mais quelques interrogations demeurent ? Nous pouvons vous conseiller pour vous apporter les clés nécessaires à sa réalisation grâce à notre expertise du monde du web.")
     }
   }
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
 
   return (
     <>
       <Head />
-      {/* <FullpageSection className='maxWidthnone'> */}
+
       <Header />
       <section className='header_textContainer'>
 
@@ -78,22 +78,19 @@ export default function Home() {
         </div>
         <p>L’agence web à l’échelle humaine, pour donner vie à vos projets</p>
       </section>
-      {/* </FullpageSection> */}
 
-      {/* Section 2 Texte  */}
-      {/* <FullpageSection> */}
-      <section className="section2">
-        {console.log(inView, ref)}
+      <section data-aos="fade-up" data-aos-duration="4000" className="section2">
+
         <img src={path + '/img/imgSite/laptop-2298286.png'} className='section2__img'></img>
         <div className='section2__container'>
-          <div className='section2__container--dotsContainer'>
+          <div data-aos="fade-up" className='section2__container--dotsContainer'>
             <span className={(section2State === 1) ? 'dot dotactive' : 'dot'}></span>
-            <span className={(section2State === 2) ? 'dot dotactive' : 'dot'}></span>
+            <span data-aos="fade-up" className={(section2State === 2) ? 'dot dotactive' : 'dot'}></span>
             <span className={(section2State === 3) ? 'dot dotactive' : 'dot'}></span>
             <span className={(section2State === 4) ? 'dot dotactive' : 'dot'}></span>
             <span className={(section2State === 5) ? 'dot dotactive' : 'dot'}></span>
           </div>
-          <div className='section2__container--menu'>
+          <div data-aos="fade-up" className='section2__container--menu'>
             <ul>
               <li>
                 <button className={(section2State === 1) ? 'activeButtonS2' : null} onClick={() => setSection2State(1)}>Design</button>
@@ -113,7 +110,7 @@ export default function Home() {
             </ul>
           </div>
           <div className='section2__container--textContainer'>
-            <h2>{activeTitle}</h2>
+            <h2 data-aos="fade-up">{activeTitle}</h2>
             <p>{activeText}</p>
           </div>
         </div>
@@ -121,7 +118,7 @@ export default function Home() {
         <ScrollButton />
 
       </section>
-      <section className='section3'>
+      <section data-aos="fade-up" data-aos-duration="4000" className='section3'>
         <h2>Nos projets</h2>
         <AliceCarousel autoPlay autoPlayInterval="3000">
           {projects.map((project) => (
@@ -137,17 +134,9 @@ export default function Home() {
             </div>
           ))}
         </AliceCarousel>
-        {/* <ScrollButton /> */}
       </section>
-
-      {/* </FullpageSection> */}
-      {/* <FullpageSection className='maxWidthnone lastIndexSection' > */}
       <ContactUs />
-      {/* <ScrollButton /> */}
-      {/* <Footer /> */}
-      {/* </FullpageSection> */}
-      {/* </FullPageSections>
-      </Fullpage> */}
+
     </>
   )
 }
