@@ -29,7 +29,7 @@ section {
   margin: auto;
   max-width: 1080px;
   scroll-snap-align: start;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -896,6 +896,16 @@ footer {
 .navbarContainer a {
   text-decoration: none;
   cursor: pointer;
+  color: white;
+  font-size: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbarContainer:after {
@@ -1028,6 +1038,30 @@ footer {
 
 .ContactUs__Container--text-link {
   margin-top: 14px;
+}
+
+.ContactUs__Container a {
+  margin-top: 14px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: #FF6060;
+  padding: 10px 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  border: #FF6060 solid 1px;
+}
+
+.ContactUs__Container a:hover {
+  background: #FF6060;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: #ffffff solid 1px;
 }
 
 .sectionProjets {
@@ -1357,7 +1391,7 @@ h1 {
 }
 
 .projectPage {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .projectPage .projectPageContainer {

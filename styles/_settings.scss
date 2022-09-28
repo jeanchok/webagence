@@ -69,7 +69,7 @@ section {
     margin: auto;
     max-width: 1080px;
     scroll-snap-align: start;
-    height: 100vh;
+    height: 100%;
     position: relative;
 
     @include tablette-only {

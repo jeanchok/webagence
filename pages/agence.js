@@ -32,14 +32,14 @@ const agence = () => {
             <section className='agenceImages'>
                 <div className='agenceImages__Card'>
                     <div className='agenceImages__Container'>
-                        <Image layout='fill' className='agenceImages__Container--img' src="/img/imgSite/1651058775675 (1).jpg" alt="photo développeur jean" />
+                        <img className='agenceImages__Container--img' src="/img/imgSite/1651058775675 (1).jpg" alt="photo développeur jean" ></img>
                     </div>
                     <h3>Jean Choquet</h3>
                     <p>Développeur Full Stack</p>
                 </div>
                 <div className='agenceImages__Card'>
                     <div className='agenceImages__Container'>
-                        <Image layout='fill' className='agenceImages__Container--img' src="/img/imgSite/avatarchloe.png" alt="photo développeur jean" />
+                        <img className='agenceImages__Container--img' src="/img/imgSite/avatarchloe.png" alt="photo développeur jean"></img>
                     </div>
                     <h3>Chloé Choquet</h3>
                     <p>Développeur Front end</p>

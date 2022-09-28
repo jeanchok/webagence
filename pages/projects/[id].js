@@ -12,7 +12,7 @@ const project = ({ project }) => {
       <h1>{project.title}</h1>
       <span>{project.date}</span>
       <p>{project.infos}</p>
-      <Image layout='fill' src={path + project.img} alt={project.title} />
+      <img layout='fill' src={path + project.img} alt={project.title} />
       {/* <Image
         src={path + project.img}
         alt={project.title}
