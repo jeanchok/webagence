@@ -1389,6 +1389,7 @@ h1 {
 @media screen and (max-width: 768px) {
   .projectPage .projectPageContainer__Text {
     margin-right: 20px;
+    margin-left: 20px;
   }
 }
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Meta from "../../components/Meta";
 import { path } from "../../config";
 import { projects } from "../../projectsData";
+import Image from 'next/image'
 
 const project = ({ project }) => {
   return (
@@ -11,7 +12,7 @@ const project = ({ project }) => {
       <h1>{project.title}</h1>
       <span>{project.date}</span>
       <p>{project.infos}</p>
-      <img src={path + project.img}></img>
+      <Image layout='fill' src={path + project.img} alt={project.title} />
       {/* <Image
         src={path + project.img}
         alt={project.title}

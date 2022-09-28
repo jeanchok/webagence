@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <p>© Webzh Agence 2022 - Tous droits réservés</p>
-                <Link href="/mentionslegales"><a className='mentionsLink' href='/mentionslegales'>Mentions Légales</a></Link>
+                <Link href="/mentionslegales" className='mentionsLink'>Mentions Légales</Link>
 
             </div>
         </footer>

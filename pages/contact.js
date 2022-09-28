@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Header from '../components/Header';
 
-const contact = () => {
+const Contact = () => {
     const [message, setMessage] = useState(false);
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
@@ -156,4 +156,4 @@ const contact = () => {
     );
 };
 
-export default contact;
+export default Contact;

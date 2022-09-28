@@ -31,7 +31,7 @@ const mentionslegales = () => {
                     Siège social : 12-14, Rond-Point des Champs Elysées 75008 Paris
                     Représentant :  Mr Claudio Corbetta
                     Conception et réalisation
-                    IONOS SARL, société à responsabilité limitée, immatriculée sous le SIREN 431303775, est en activité depuis 22 ans. Implantée à SARREGUEMINES (57200), elle est spécialisée dans le secteur d'activité du traitement de données, hébergement et activités connexes. Sur l'année 2019 elle réalise un chiffre d'affaires de 45 736 500,00 €.
+                    IONOS SARL, société à responsabilité limitée, immatriculée sous le SIREN 431303775, est en activité depuis 22 ans. Implantée à SARREGUEMINES (57200), elle est spécialisée dans le secteur d'activité du traitement de données, hébergement et activités connexes. Sur l&apos;année 2019 elle réalise un chiffre d'affaires de 45 736 500,00 €.
                     Britta SCHMIDT , Achim WEISS sont gérants de la société IONOS SARL.
 
 
@@ -62,7 +62,7 @@ const mentionslegales = () => {
                     – du droit d’obtenir leur modification, rectification ou effacement dans les meilleurs délais.
                     Sous réserve de justifier de son identité, l’utilisateur peut exercer ces droits en écrivant à Webzh Agence à l’adresse électronique suivante contact@webzhagence.com ou à l’adresse postale suivante 32 boulevard du port 95000 Cergy, France.
                     L’utilisateur peut introduire une réclamation auprès de l’autorité française de protection des données, la C.N.I.L. (www.cnil.fr).
-                    Pour plus d’informations concernant la protection des données à caractère personnel, il convient de se référer à la politique de confidentialité de Mon Agence du Web. https://monagenceduweb.com/home/politique-de-confidentialite/
+
                     <br /><b>Droits d’auteurs</b><br />
                     Toutes les marques, photographies, textes, commentaires, illustrations, images animées ou non, séquences vidéo, sons, ainsi que toutes les applications informatiques qui pourraient être utilisées pour faire fonctionner ce site et plus généralement tous les éléments reproduits ou utilisés sur le site sont protégés par les lois en vigueur au titre de la propriété intellectuelle.
                     La reproduction ou représentation, intégrale ou partielle, des pages, des données et de toute autre élément constitutif au site, par quelque procédé ou support que ce soit, est interdite et constitue, sans autorisation de l’éditeur, une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.
@@ -90,7 +90,7 @@ const mentionslegales = () => {
                     Les liens hypertextes établis en direction d’autres sites à partir de « https://webzhagence.com » ne sauraient, en aucun cas, engager la responsabilité de Jean Choquet ou de Webzh Agence.
 
                     Informations techniques
-                    Il est expressément rappelé à l’utilisateur qu’internet n’est pas un réseau sécurisé. L’utilisateur reconnaît être pleinement informé du défaut de fiabilité du réseau internet, tout particulièrement en termes de failles de sécurité relative à la transmission de données et de non garantie des performances relatives au volume et à la rapidité de transmission des données. Webzh Agence met tout en œuvre afin que la plateforme Webzh Agence soit la plus sécurisée possible. Cependant, Internet n’est pas un réseau sécurisé et il est possible que la fiabilité du système soit compromise indépendamment de la volonté de Webzh Agence. Webzh Agence ne sera en aucun cas responsable d'événements imprévisibles tels que des failles de sécurité concernant la transmission de données ni de la garantie des performances relatives au volume et à la rapidité de transmission des données. Dans ces conditions, il appartient aux Utilisateurs de prendre toutes les mesures appropriées de façon à protéger leurs propres données et/ou logiciels notamment de la contamination par d’éventuels virus circulant sur Internet.
+                    Il est expressément rappelé à l&apos;utilisateur qu&apos;internet n’est pas un réseau sécurisé. L&apos;utilisateur reconnaît être pleinement informé du défaut de fiabilité du réseau internet, tout particulièrement en termes de failles de sécurité relative à la transmission de données et de non garantie des performances relatives au volume et à la rapidité de transmission des données. Webzh Agence met tout en œuvre afin que la plateforme Webzh Agence soit la plus sécurisée possible. Cependant, Internet n&apos;est pas un réseau sécurisé et il est possible que la fiabilité du système soit compromise indépendamment de la volonté de Webzh Agence. Webzh Agence ne sera en aucun cas responsable d&apos;événements imprévisibles tels que des failles de sécurité concernant la transmission de données ni de la garantie des performances relatives au volume et à la rapidité de transmission des données. Dans ces conditions, il appartient aux Utilisateurs de prendre toutes les mesures appropriées de façon à protéger leurs propres données et/ou logiciels notamment de la contamination par d&apos;éventuels virus circulant sur Internet.
 
                     <br /><b>Cookies</b><br />
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactUs from "../components/ContactUs";
 import Header from '../components/Header';
+import Image from 'next/image'
 
 const agence = () => {
     return (
@@ -10,7 +11,7 @@ const agence = () => {
 
                 <div className='header_textContainer--flex'>
                     <h1>
-                        L'agence Web<br />
+                        L&apos;agence Web<br />
                         à l’échelle<br />
                         humaine.
                     </h1>
@@ -31,14 +32,14 @@ const agence = () => {
             <section className='agenceImages'>
                 <div className='agenceImages__Card'>
                     <div className='agenceImages__Container'>
-                        <img className='agenceImages__Container--img' src="/img/imgSite/1651058775675 (1).jpg" alt="photo développeur jean" />
+                        <Image layout='fill' className='agenceImages__Container--img' src="/img/imgSite/1651058775675 (1).jpg" alt="photo développeur jean" />
                     </div>
                     <h3>Jean Choquet</h3>
                     <p>Développeur Full Stack</p>
                 </div>
                 <div className='agenceImages__Card'>
                     <div className='agenceImages__Container'>
-                        <img className='agenceImages__Container--img' src="/img/imgSite/avatarchloe.png" alt="photo développeur jean" />
+                        <Image layout='fill' className='agenceImages__Container--img' src="/img/imgSite/avatarchloe.png" alt="photo développeur jean" />
                     </div>
                     <h3>Chloé Choquet</h3>
                     <p>Développeur Front end</p>
