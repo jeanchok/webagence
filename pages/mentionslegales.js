@@ -4,6 +4,7 @@ import Header from '../components/Header';
 const mentionslegales = () => {
     return (
         <div>
+            <Meta />
             <Header />
             <section className='header_textContainer'>
                 <h1>

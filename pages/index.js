@@ -63,7 +63,7 @@ export default function Home() {
   return (
     <>
       <Head />
-
+      <Meta />
       <Header />
       <section className='header_textContainer'>
 

@@ -15,8 +15,8 @@ const projets = () => {
     return (
         <>
             <Meta
-                title={"Portoflio dev, les tous derniers projets réalisés"}
-                description={"Suite de 70 mots"}
+                title={"Webzh Agence - Nos projets"}
+                description={"Vous trouverez ici tout les principaux projets web que nous avons créé."}
             />
             <Header />
             <section className='header_textContainer'>

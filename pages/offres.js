@@ -7,6 +7,7 @@ import Image from 'next/image'
 const offers = () => {
     return (
         <div>
+            <Meta />
             <Header />
             <section className='header_textContainer'>
 

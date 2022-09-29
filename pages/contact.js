@@ -29,7 +29,9 @@ const Contact = () => {
 
     return (
         <>
+            <Meta />
             <div className="main">
+
                 <Header />
                 <section className='header_textContainer'>
 
