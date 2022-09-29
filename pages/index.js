@@ -82,7 +82,7 @@ export default function Home() {
 
       <section data-aos="fade-up" data-aos-duration="4000" className="section2">
 
-        <img layout='fill' src={path + '/img/imgSite/laptop-2298286.png'} className='section2__img' />
+        <img layout='fill' src={'/img/imgSite/laptop-2298286.png'} className='section2__img' />
         <div className='section2__container'>
           <div data-aos="fade-up" className='section2__container--dotsContainer'>
             <span className={(section2State === 1) ? 'dot dotactive' : 'dot'}></span>
@@ -124,7 +124,7 @@ export default function Home() {
         <AliceCarousel autoPlay autoPlayInterval="3000">
           {projects.map((project) => (
             <div key={project.id} className='projectContainer'>
-              <img layout='fill' className="sliderimg" src={path + project.img} />
+              <img layout='fill' className="sliderimg" src={project.img} />
               <div className="projectContainer__Overlay"></div>
               <h3 className='projectContainer__Title'>{project.title}</h3>
               <h4 className='projectContainer__Languages'>{project.languages}</h4>
