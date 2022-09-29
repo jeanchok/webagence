@@ -343,6 +343,11 @@
         font-weight: 500;
         font-size: 32px;
         color: white;
+
+        @include mobile {
+            font-size: 26px;
+            text-align: left;
+        }
     }
 
     &__Overlay {
