@@ -17,7 +17,7 @@ const Header = () => {
             </div> */}
             <div className='navbarContainer'>
                 <div className='logoContainer'>
-                    <img className='logoContainer__img' src=".\img\imgSite\logo webzh white.png" alt="logo webzh" />
+                    <img className='logoContainer__img' src=".\img\imgSite\logo webzh white.png" alt="Webzh Agence, création de site web tout simplement" />
                     <Link href='/' className='logoContainer__text'>Webzh Agence</Link>
                 </div>
                 <Navbar />
