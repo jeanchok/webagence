@@ -36,7 +36,7 @@ const projets = () => {
                 {projects.map((project) => (
 
                     <div key={project.id} className='projectPageContainer'>
-                        <img layout='fill' className={"projectPageContainer__Mockup"} src={project.mockup} />
+                        <img layout='fill' className={"projectPageContainer__Mockup"} src={project.mockup} alt={'mockup projet' + project.title} />
                         <div className='projectPageContainer__Text'>
                             <h3 className='projectPageContainer__Text--Title'>{project.title}</h3>
                             <h4 className='projectPageContainer__Text--Languages'>{project.languages}</h4>

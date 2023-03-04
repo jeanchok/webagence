@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Header from '../components/Header';
+import Meta from '../components/Meta'
 
 const Contact = () => {
     const [message, setMessage] = useState(false);
@@ -41,9 +42,6 @@ const Contact = () => {
                             pour parler<br />
                             de votre projet.
                         </h1>
-                        <span className="dot1">
-                            <span className="dot2"></span>
-                        </span>
                     </div>
                     <p className='contactP'>Nous sommes à votre disposition pour toutes Informations supplémentaires.</p>
                 </section >

@@ -1,6 +1,17 @@
 export const projects = [
     {
         id: 1,
+        title: "Agatha Festival",
+        date: "Décembre 2023",
+        languages: ["React"],
+        infos:
+            "Réalisation de l'intégralité du design et du site web pour un festival",
+        img: "/img/ordi agatha.PNG",
+        mockup: "/img/smartmockups_letwjg88.jpg",
+        link: "https://agathafestival.fr/",
+    },
+    {
+        id: 2,
         title: "D2M",
         date: "Janvier 2022",
         languages: ["Wordpress"],
@@ -11,7 +22,7 @@ export const projects = [
         link: "https://d2m-machine-bois.fr/",
     },
     {
-        id: 2,
+        id: 3,
         title: "Bulle de rêve",
         date: "Mars 2020",
         languages: ["Wordpress"],

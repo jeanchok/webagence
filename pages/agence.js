@@ -2,6 +2,7 @@ import React from 'react';
 import ContactUs from "../components/ContactUs";
 import Header from '../components/Header';
 import Image from 'next/image'
+import Meta from '../components/Meta'
 
 const agence = () => {
     return (

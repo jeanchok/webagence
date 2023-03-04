@@ -2,9 +2,42 @@ import React from 'react';
 import ContactUs from "../components/ContactUs";
 import Header from '../components/Header';
 import ScrollButton from '../components/ScrollButton';
+import Offers from '../components/Offers';
 import Image from 'next/image'
+import Meta from '../components/Meta'
 
 const offers = () => {
+
+    const offers = [
+        {
+            logoSrc: './img/imgSite/creation-de-sites-web.png',
+            title: `Design & Maquettage`,
+            text: `Vous avez une idée de site web ? Nous sommes là pour en réaliser la maquette ! Grâce à notre expertise nous pourrons trouver ensemble le design qui vous convient et qui sera le plus adapté à votre activité.`,
+        },
+        {
+            logoSrc: './img/imgSite/prototype.png',
+            title: `Création de site`,
+            text: `Vous souhaitez un site web pour vous ou votre entreprise ? Que ce soit un site vitrine, un blog ou un site sur-mesure, nous pouvons le réaliser. Nous nous adaptons selon vos envies et votre budget pour donner vie à vos projets.`,
+        },
+        {
+            logoSrc: './img/imgSite/serveur.png',
+            title: `Hébergement`,
+            text: `Nous hébergeons sur nos serveurs votre site web. C’est parfois difficile de gérer sur plusieurs plateformes un seul site web c’est donc pour cela que nous proposons cette offre à 360°.`,
+        },
+        {
+            logoSrc: './img/imgSite/entretien.png',
+            title: `Maintenance`,
+            text: `Vous souhaitez résoudre des problèmes ou effectuer des améliorations sur votre site web ? Nous avons les compétences nécessaires : Wordpress, Javascript, React, Node.js… N’hésitez pas à nous contacter pour en discuter !`,
+        },
+        {
+            logoSrc: './img/imgSite/20943456.png',
+            title: `Conseils & stratégie`,
+            text: `Vous souhaitez concrétiser votre projet mais quelques interrogations demeurent ? Nous pouvons vous conseiller pour vous apporter les clés nécessaires à sa réalisation grâce à notre expertise du monde du web.`,
+        }
+
+    ]
+
+
     return (
         <div>
             <Meta />
@@ -21,6 +54,14 @@ const offers = () => {
             </section >
             <section className='offresSection'>
 
+                {
+                    offers.map((offer, index) => (
+                        <Offers key={index} offer={offer} />
+                    ))
+                }
+
+
+                {/* 
                 <div className='offresSection__Card'>
                     <img layout='fill' src=".\img\imgSite\creation-de-sites-web.png" alt="illustration design" />
                     <div className='offresSection__Card--Text--right'>
@@ -57,7 +98,7 @@ const offers = () => {
                     <div className='offresSection__Card--Text--right'>
                         <h2>Conseils & stratégie</h2>
                         <p>Vous souhaitez concrétiser votre projet mais quelques interrogations demeurent ? Nous pouvons vous conseiller pour vous apporter les clés nécessaires à sa réalisation grâce à notre expertise du monde du web.</p>                </div>
-                </div>
+                </div> */}
 
             </section>
             <ScrollButton />

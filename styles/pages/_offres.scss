@@ -1,10 +1,27 @@
 .offresSection {
-    display: flex;
-    flex-direction: column;
     margin-top: 100px;
     margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    max-width: 80vw !important;
 
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90vw !important;
+    }
 
+    @include tablette-only {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &__Card {
         display: flex;
@@ -71,5 +88,53 @@
                 object-fit: contain;
             }
         }
+    }
+}
+
+.offersCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+
+    border-radius: 5px;
+    padding: 36px;
+
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9,
+        -20px -20px 60px #ffffff;
+
+
+
+    &__header {
+        display: flex;
+        width: 100%;
+        gap: 8px;
+
+
+        h3 {
+            font-size: 26px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    &__bar {
+        width: 80%;
+        border-bottom: 2px rgb(41, 41, 41) solid;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 24px;
     }
 }

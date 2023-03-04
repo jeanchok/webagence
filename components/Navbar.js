@@ -15,7 +15,7 @@ const Navbar = () => {
 
 
         <nav className='navbar'>
-            <button className={!menuClass ? "mobileMenu container" : "mobileMenu container change"} onClick={changeClass}>
+            <button className={!menuClass ? "mobileMenu container" : "mobileMenu container change"} onClick={changeClass} aria-label="Navigation">
                 <div className="bar1"></div>
                 <div className="bar2"></div>
                 <div className="bar3"></div>

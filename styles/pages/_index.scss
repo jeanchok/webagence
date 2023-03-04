@@ -1,33 +1,37 @@
 .header_textContainer {
     padding: 0;
     height: 518px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     & h1 {
         font-weight: 700;
-        font-size: 80px;
+        //font-size: 80px;
         line-height: 98px;
         padding-top: 96px;
         color: #FFFFFF;
         line-height: normal;
+        font-size: calc(50px + (70 - 50) * ((100vw - 768px) / (1600 - 768)));
 
         @include tablette-only {
             margin-left: 20px;
             margin-right: 20px;
-            font-size: 70px;
+            //font-size: 70px;
         }
 
         @include mobile() {
             padding-top: 15px;
             margin-left: 20px;
             margin-right: 20px;
-            font-size: 55px;
+            //font-size: 55px;
         }
 
         @include mobileS {
             padding-top: 10px;
             margin-left: 20px;
             margin-right: 20px;
-            font-size: 50px;
+            //font-size: 50px;
         }
     }
 
@@ -376,17 +380,17 @@
 }
 
 .alice-carousel__dots-item {
-    background-color: $pinklight  !important;
+    background-color: $pinklight !important;
 }
 
 .alice-carousel__dots-item:not(.__custom):hover,
 .alice-carousel__dots-item:not(.__custom).__active {
-    background-color: $pink  !important;
+    background-color: $pink !important;
 }
 
 .alice-carousel__prev-btn-item,
 .alice-carousel__next-btn-item {
-    color: $pink  !important;
+    color: $pink !important;
     font-size: 30px;
 }
 

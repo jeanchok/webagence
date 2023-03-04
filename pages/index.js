@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Meta from '../components/Meta'
 import ContactUs from "../components/ContactUs";
 import { useEffect, useState } from 'react'
 import { projects } from "../projectsData";
@@ -63,7 +64,10 @@ export default function Home() {
   return (
     <>
       <Head />
-      <Meta />
+      <Meta
+        title={"Webzh Agence | Donnez vie à vos projets projets"}
+        description={"Envie de créer un site web ou une application web ? Vous êtes au bon endroit !"}
+      />
       <Header />
       <section className='header_textContainer'>
 
@@ -73,16 +77,14 @@ export default function Home() {
             Création de site. <br />
             Applications web.
           </h1>
-          <span className="dot1">
-            <span className="dot2"></span>
-          </span>
+
         </div>
         <p>L’agence web à l’échelle humaine, pour donner vie à vos projets</p>
       </section>
 
       <section data-aos="fade-up" data-aos-duration="4000" className="section2">
 
-        <img layout='fill' src={'/img/imgSite/laptop-2298286.png'} className='section2__img' />
+        <img layout='fill' src={'/img/imgSite/laptop-2298286.png'} className='section2__img' alt='illustration ordinateur' />
         <div className='section2__container'>
           <div data-aos="fade-up" className='section2__container--dotsContainer'>
             <span className={(section2State === 1) ? 'dot dotactive' : 'dot'}></span>
@@ -124,7 +126,7 @@ export default function Home() {
         <AliceCarousel autoPlay autoPlayInterval="3000">
           {projects.map((project) => (
             <div key={project.id} className='projectContainer'>
-              <img layout='fill' className="sliderimg" src={project.img} />
+              <img layout='fill' className="sliderimg" src={project.img} alt={'image projet + project.title'} />
               <div className="projectContainer__Overlay"></div>
               <h3 className='projectContainer__Title'>{project.title}</h3>
               <h4 className='projectContainer__Languages'>{project.languages}</h4>
