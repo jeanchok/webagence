@@ -40,7 +40,10 @@ const offers = () => {
 
     return (
         <div>
-            <Meta />
+            <Meta
+                title={"Webzh Agence | Nos offres à 360°"}
+                description={"Envie de créer un site web ou une application web ? Vous êtes au bon endroit !"}
+            />
             <Header />
             <section className='header_textContainer'>
 

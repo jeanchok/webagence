@@ -5,7 +5,10 @@ import Header from '../components/Header';
 const mentionslegales = () => {
     return (
         <div>
-            <Meta />
+            <Meta
+                title={"Webzh Agence | Mentions légales"}
+                description={"Envie de créer un site web ou une application web ? Vous êtes au bon endroit !"}
+            />
             <Header />
             <section className='header_textContainer'>
                 <h1>

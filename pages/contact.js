@@ -30,7 +30,10 @@ const Contact = () => {
 
     return (
         <>
-            <Meta />
+            <Meta
+                title={"Webzh Agence | Contactez-nous !"}
+                description={"Envie de créer un site web ou une application web ? Vous êtes au bon endroit !"}
+            />
             <div className="main">
 
                 <Header />

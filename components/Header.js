@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header>
             <div className='headerBackground'>
-                <div class="background">
+                <div className="background">
                     <span></span>
                     <span></span>
                     <span></span>
