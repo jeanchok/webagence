@@ -29,13 +29,6 @@ const Header = () => {
                     <span></span>
                 </div>
             </div>
-
-
-            {/* <div class="ocean">
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-            </div> */}
             <div className='navbarContainer'>
                 <div className='logoContainer'>
                     <img className='logoContainer__img' src=".\img\imgSite\logo webzh white.png" alt="Webzh Agence, création de site web tout simplement" />

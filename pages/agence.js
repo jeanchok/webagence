@@ -20,9 +20,6 @@ const agence = () => {
                         à l’échelle<br />
                         humaine.
                     </h1>
-                    <span className="dot1">
-                        <span className="dot2"></span>
-                    </span>
                 </div>
                 <p>Découvrez notre agence</p>
             </section >
