@@ -336,6 +336,10 @@
         background: rgba(217, 217, 217, 0.7);
         border-radius: 5px;
         padding: 10px 15px;
+
+        @include mobile {
+            margin-top: 54px;
+        }
     }
 
     &__Infos {
@@ -351,6 +355,8 @@
         @include mobile {
             font-size: 26px;
             text-align: left;
+            margin-top: 54px;
+
         }
     }
 
