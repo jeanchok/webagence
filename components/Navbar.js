@@ -21,9 +21,8 @@ const Navbar = () => {
                 <div className="bar3"></div>
             </button>
             <ul className={!menuClass ? 'none' : 'list'}>
-                <div className={!menuClass ? 'none' : 'listInner'}>
+                <div className={'listInner'}>
                     <li className={router.pathname == "/" ? "activeLine" : ""}>
-
                         <Link href="/">
                             <a className={router.pathname == "/" ? "active" : ""}>
                                 Accueil
