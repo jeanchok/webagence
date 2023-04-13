@@ -22,11 +22,18 @@ const projets = () => {
             <section className='header_textContainer'>
 
                 <div className='header_textContainer--flex'>
-                    <h1>
-                        Découvrez <br />
-                        les projets que nous<br />
-                        avons réalisé.
-                    </h1>
+                    <div>
+                        <h1>
+                            Découvrez
+                        </h1>
+                        <h1>
+                            les projets que nous
+                        </h1>
+                        <h1>
+                            avons réalisé.
+                        </h1>
+                    </div>
+
 
                 </div>
                 <p>Vous aussi, donnez vie à vos idées.</p>

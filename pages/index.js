@@ -72,11 +72,15 @@ export default function Home() {
       <section className='header_textContainer'>
 
         <div className='header_textContainer--flex'>
-          <h1>
-            Design. <br />
+
+          {/* <h1>Design. <br />
             Création de site. <br />
-            Applications web.
-          </h1>
+            Applications web.</h1> */}
+          <div>
+            <h1>Design.</h1>
+            <h1>Création de site.</h1>
+            <h1>Applications web.</h1>
+          </div>
 
         </div>
         <p>L’agence web à l’échelle humaine, pour donner vie à vos projets</p>
@@ -119,7 +123,6 @@ export default function Home() {
         </div>
         <div className="line"></div>
         <ScrollButton />
-
       </section>
       <section data-aos="fade-up" data-aos-duration="4000" className='section3'>
         <h2>Nos projets</h2>

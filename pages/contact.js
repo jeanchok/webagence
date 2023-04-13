@@ -40,20 +40,30 @@ const Contact = () => {
                 <section className='header_textContainer'>
 
                     <div className='header_textContainer--flex'>
-                        <h1>
-                            Contactez-nous<br />
-                            pour parler<br />
-                            de votre projet.
-                        </h1>
+                        <div>
+                            <h1>
+                                Contactez-nous
+                            </h1>
+                            <h1>
+                                pour parler
+                            </h1>
+                            <h1>
+                                de votre projet.
+                            </h1>
+                        </div>
+
                     </div>
                     <p className='contactP'>Nous sommes à votre disposition pour toutes Informations supplémentaires.</p>
                 </section >
-
                 <section className='contactFormContainer'>
+                    <h2>Contactez-nous par mail, par le formulaire ou répondez directement au questionnaire si vous voulez un devis.</h2>
+                </section >
+                <section className='contactFormContainer'>
+
                     <form className='contactForm' id='contact-form' ref={form} onSubmit={sendEmail} noValidate>
                         {/* Row 1 of form */}
 
-                        <h2>Remplissez le formulaire ci-dessous pour nous contacter.</h2>
+                        <h3>Formulaire de contact.</h3>
 
                         <div className='formRow'>
                             <div className='col-6'>
@@ -148,9 +158,12 @@ const Contact = () => {
                             </span>
                         </p>
                     </div>
-
-
                 </section>
+
+                <section className='contactFormContainer__question'>
+                    <h2>Demandez un devis en remplissant ce questionnaire.</h2>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScIIkBCOm3w7lErYUNY7itj1hxCPJm6_JkAfutVjhX3_6b2mw/viewform?embedded=true" width="640" height="4650" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+                </section >
             </div>
 
 

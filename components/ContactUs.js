@@ -9,11 +9,10 @@ const ContactUs = () => {
             <div className='ContactUs__Container--text'>
                 {/* <i className="fa fa-comments-o" aria-hidden="true"></i> */}
 
-                <h3 className='ContactUs__Container--text-title'> <FontAwesomeIcon icon={faComment} />  Besoin d&apos;informations supplémentaires ?</h3>
+                <h3 className='ContactUs__Container--text-title'> <FontAwesomeIcon icon={faComment} />  Besoin d&apos;informations supplémentaires ou d'un devis ?</h3>
                 <h3 className='ContactUs__Container--text-title'>Contactez-nous !</h3>
                 <Link href="/contact" className='ContactUs__Container--text-link buttonFront'>Contact</Link>
             </div>
-
         </div>
     );
 };

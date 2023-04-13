@@ -12,27 +12,27 @@ const offers = () => {
         {
             logoSrc: './img/imgSite/creation-de-sites-web.png',
             title: `Design & Maquettage`,
-            text: `Vous avez une idée de site web ? Nous sommes là pour en réaliser la maquette ! Grâce à notre expertise nous pourrons trouver ensemble le design qui vous convient et qui sera le plus adapté à votre activité.`,
+            text: `Transformez votre idée de site web en réalité avec notre expertise en design et maquettage ! Ensemble, nous élaborerons une maquette visuellement attrayante et adaptée à votre activité pour vous démarquer de la concurrence. Laissez-vous séduire par nos créations uniques et personnalisées pour une expérience utilisateur optimale.`,
         },
         {
             logoSrc: './img/imgSite/prototype.png',
             title: `Création de site`,
-            text: `Vous souhaitez un site web pour vous ou votre entreprise ? Que ce soit un site vitrine, un blog ou un site sur-mesure, nous pouvons le réaliser. Nous nous adaptons selon vos envies et votre budget pour donner vie à vos projets.`,
+            text: `Donnez vie à votre projet de site web, qu'il s'agisse d'un site vitrine, d'un blog ou d'une solution sur-mesure pour vous ou votre entreprise. Nous nous adaptons à vos envies et à votre budget, en proposant des designs captivants et des fonctionnalités adaptées à vos besoins. Rejoignez notre clientèle satisfaite et propulsez votre présence en ligne !`,
         },
         {
             logoSrc: './img/imgSite/serveur.png',
             title: `Hébergement`,
-            text: `Nous hébergeons sur nos serveurs votre site web. C’est parfois difficile de gérer sur plusieurs plateformes un seul site web c’est donc pour cela que nous proposons cette offre à 360°.`,
+            text: `Optez pour notre solution d'hébergement fiable et performante pour votre site web. Simplifiez-vous la vie en centralisant tous vos services sur une seule plateforme. Nos serveurs sécurisés et notre assistance technique vous garantissent une expérience sans tracas et une tranquillité d'esprit à 360°.`,
         },
         {
             logoSrc: './img/imgSite/entretien.png',
             title: `Maintenance`,
-            text: `Vous souhaitez résoudre des problèmes ou effectuer des améliorations sur votre site web ? Nous avons les compétences nécessaires : Wordpress, Javascript, React, Node.js… N’hésitez pas à nous contacter pour en discuter !`,
+            text: `Ne laissez pas les problèmes techniques freiner votre activité en ligne. Notre équipe d'experts maîtrise diverses technologies, telles que Wordpress, JavaScript, React, Node.js, pour résoudre vos problèmes et apporter des améliorations à votre site web. N'hésitez pas à nous contacter pour discuter de vos besoins et bénéficier d'un service sur-mesure !`,
         },
         {
             logoSrc: './img/imgSite/20943456.png',
             title: `Conseils & stratégie`,
-            text: `Vous souhaitez concrétiser votre projet mais quelques interrogations demeurent ? Nous pouvons vous conseiller pour vous apporter les clés nécessaires à sa réalisation grâce à notre expertise du monde du web.`,
+            text: `Vous avez un projet en tête mais vous ne savez pas par où commencer ? Notre équipe de professionnels est là pour vous guider et vous fournir les conseils stratégiques nécessaires à la réussite de votre projet. Profitez de notre expertise du monde du web et des meilleures pratiques pour maximiser votre impact en ligne et atteindre vos objectifs.`,
         }
 
     ]
@@ -48,61 +48,23 @@ const offers = () => {
             <section className='header_textContainer'>
 
                 <div className='header_textContainer--flex'>
-                    <h1>
-                        Nos offres à 360°. <br />
-                        Nous nous occupons de tout.
-                    </h1>
+                    <div>
+                        <h1>
+                            Nos offres à 360°.
+                        </h1>
+                        <h1>
+                            Nous nous occupons de tout.
+                        </h1>
+                    </div>
                 </div>
                 <p>Toute votre transition digitale, au même endroit.</p>
             </section >
             <section className='offresSection'>
-
                 {
                     offers.map((offer, index) => (
                         <Offers key={index} offer={offer} />
                     ))
                 }
-
-
-                {/* 
-                <div className='offresSection__Card'>
-                    <img layout='fill' src=".\img\imgSite\creation-de-sites-web.png" alt="illustration design" />
-                    <div className='offresSection__Card--Text--right'>
-                        <h2>Design & Maquettage</h2>
-                        <p>Vous avez une idée de site web ? Nous sommes là pour en réaliser la maquette ! Grâce à notre expertise nous pourrons trouver ensemble le design qui vous convient et qui sera le plus adapté à votre activité.</p>
-                    </div>
-                </div>
-                <div className="line"></div>
-                <div className='offresSection__Card'>
-
-                    <div className='offresSection__Card--Text--left'>
-                        <h2>Création de site</h2>
-                        <p>Vous souhaitez un site web pour vous ou votre entreprise ? Que ce soit un site vitrine, un blog ou un site sur-mesure, nous pouvons le réaliser. Nous nous adaptons selon vos envies et votre budget pour donner vie à vos projets.</p>                </div>
-                    <img layout='fill' src=".\img\imgSite\prototype.png" alt="illustration création site" />
-                </div>
-                <div className="line"></div>
-                <div className='offresSection__Card'>
-                    <img layout='fill' src=".\img\imgSite\serveur.png" alt="illustration hébergement" />
-                    <div className='offresSection__Card--Text--right'>
-                        <h2>Hébergement</h2>
-                        <p>Nous hébergeons sur nos serveurs votre site web. C’est parfois difficile de gérer sur plusieurs plateformes un seul site web c’est donc pour cela que nous proposons cette offre à 360°.</p>                </div>
-                </div>
-                <div className="line"></div>
-                <div className='offresSection__Card'>
-
-                    <div className='offresSection__Card--Text--left'>
-                        <h2>Maintenance</h2>
-                        <p>Vous souhaitez résoudre des problèmes ou effectuer des améliorations sur votre site web ? Nous avons les compétences nécessaires : Wordpress, Javascript, React, Node.js… N’hésitez pas à nous contacter pour en discuter !</p>                </div>
-                    <img layout='fill' src=".\img\imgSite\entretien.png" alt="illustration maintenance" />
-                </div>
-                <div className="line"></div>
-                <div className='offresSection__Card'>
-                    <img layout='fill' src=".\img\imgSite\20943456.png" alt="illustration conseils" />
-                    <div className='offresSection__Card--Text--right'>
-                        <h2>Conseils & stratégie</h2>
-                        <p>Vous souhaitez concrétiser votre projet mais quelques interrogations demeurent ? Nous pouvons vous conseiller pour vous apporter les clés nécessaires à sa réalisation grâce à notre expertise du monde du web.</p>                </div>
-                </div> */}
-
             </section>
             <ScrollButton />
             <ContactUs />

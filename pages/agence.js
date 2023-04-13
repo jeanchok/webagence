@@ -15,11 +15,17 @@ const agence = () => {
             <section className='header_textContainer'>
 
                 <div className='header_textContainer--flex'>
-                    <h1>
-                        L&apos;agence Web<br />
-                        à l’échelle<br />
-                        humaine.
-                    </h1>
+                    <div>
+                        <h1>
+                            L&apos;agence Web
+                        </h1>
+                        <h1>
+                            à l’échelle
+                        </h1>
+                        <h1>
+                            humaine.
+                        </h1>
+                    </div>
                 </div>
                 <p>Découvrez notre agence</p>
             </section >

@@ -4,23 +4,25 @@
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 60px;
     grid-row-gap: 60px;
-    max-width: 80vw !important;
 
     @include mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 90vw !important;
+        width: 100%;
+        justify-content: center;
     }
 
     @include tablette-only {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     &__Card {
@@ -94,7 +96,7 @@
 .offersCard {
     display: flex;
     flex-direction: column;
-    width: 100%;
+
     justify-content: center;
     gap: 16px;
 
@@ -106,6 +108,17 @@
     box-shadow: 20px 20px 60px #d9d9d9,
         -20px -20px 60px #ffffff;
 
+    @include tablette-only {
+        width: 90%;
+    }
+
+    @include mobile() {
+        width: 90%;
+    }
+
+    @include mobileS {
+        width: 90%;
+    }
 
 
     &__header {

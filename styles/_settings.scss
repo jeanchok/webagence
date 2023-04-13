@@ -73,20 +73,17 @@ section {
     position: relative;
 
     @include tablette-only {
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 90%;
         height: 100%;
     }
 
     @include mobile() {
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 90%;
         height: 100%;
     }
 
     @include mobileS {
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 90%;
         height: 100%;
     }
 
@@ -135,7 +132,7 @@ $pinklight : #ffb6b6;
     color: $pink;
     transition: all 0.5s ease;
     transform: scale(1);
-    color: $pink  !important;
+    color: $pink !important;
     left: 0 !important;
     bottom: 30px !important;
     margin-bottom: 15px !important;

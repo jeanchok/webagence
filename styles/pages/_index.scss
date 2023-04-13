@@ -5,14 +5,20 @@
     flex-direction: column;
     justify-content: center;
 
+    @for $i from 1 through 10 {
+        & h1:nth-child(#{$i}n) {
+            animation: titleEntrance #{$i * 0.5}s ease-in-out;
+        }
+    }
+
     & h1 {
         font-weight: 700;
-        //font-size: 80px;
         line-height: 98px;
-        padding-top: 96px;
+        //padding-top: 96px;
         color: #FFFFFF;
         line-height: normal;
         font-size: calc(50px + (70 - 50) * ((100vw - 768px) / (1600 - 768)));
+        overflow: hidden;
 
         @include tablette-only {
             margin-left: 20px;
@@ -43,6 +49,8 @@
         line-height: 39px;
         text-align: center;
         color: white;
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
         @include LowerThanTablette {
             font-size: 22px;
@@ -67,6 +75,49 @@
     &--flex {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+
+@-webkit-keyframes titleEntrance {
+    from {
+        -webkit-transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: rotate(0%);
+        opacity: 1;
     }
 }
 

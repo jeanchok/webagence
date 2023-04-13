@@ -4,7 +4,7 @@ h1 {
     font-weight: 700;
     font-size: 80px;
     line-height: 98px;
-    padding-top: 96px;
+    //padding-top: 96px;
     color: #FFFFFF;
 }
 
@@ -15,6 +15,8 @@ h1 {
         color: black;
         margin-left: 40px;
     }
+
+
 }
 
 
@@ -33,7 +35,7 @@ h1 {
 #contact-form {
     max-width: 800px;
     margin: auto;
-    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    //animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     width: 50%;
 
     @include tablette-only {
@@ -122,10 +124,7 @@ h1 {
 .contactInfo {
     display: flex;
     flex-direction: column;
-    width: 45%;
-    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
-    margin: auto;
     margin-top: 40px;
 
 
@@ -183,6 +182,12 @@ h1 {
     justify-content: space-between;
     margin: auto;
     margin-top: 80px;
+    margin-bottom: 40px;
+
+    h2 {
+        font-size: 40px;
+        color: $pink;
+    }
 
     @include tablette-only {
         flex-direction: column;
@@ -225,5 +230,22 @@ h1 {
 .contactP {
     @include mobile {
         display: none;
+    }
+}
+
+.contactFormContainer__question {
+    flex-direction: column;
+
+
+    h2 {
+        margin-bottom: 40px;
+        font-size: 40px;
+        color: $pink;
+        padding-top: 20px;
+        border-top: $pink 1px solid;
+    }
+
+    iframe {
+        width: 100%;
     }
 }
