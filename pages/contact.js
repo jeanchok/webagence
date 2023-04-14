@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Header from '../components/Header';
 import Meta from '../components/Meta'
+import Link from "next/link";
 
 const Contact = () => {
     const [message, setMessage] = useState(false);
@@ -162,7 +163,9 @@ const Contact = () => {
 
                 <section className='contactFormContainer__question'>
                     <h2>Demandez un devis en remplissant ce questionnaire.</h2>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScIIkBCOm3w7lErYUNY7itj1hxCPJm6_JkAfutVjhX3_6b2mw/viewform?embedded=true" width="640" height="4650" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+                    <div className='buttonContact buttonFront contactFormContainer__question--link'>
+                        <Link href="https://forms.gle/DoXGPtBHLjyKdhyJA">Questionnaire</Link>
+                    </div>
                 </section >
             </div>
 

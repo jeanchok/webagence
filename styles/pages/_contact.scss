@@ -248,4 +248,21 @@ h1 {
     iframe {
         width: 100%;
     }
+
+    &--link {
+        max-width: 200px;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+
+        a {
+            text-decoration: none;
+            color: black
+        }
+
+        &:hover a {
+            color: #FFFFFF;
+            transition: 0.5s;
+        }
+    }
 }
