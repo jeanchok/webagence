@@ -5,6 +5,7 @@ import ScrollButton from '../components/ScrollButton';
 import Offers from '../components/Offers';
 import Image from 'next/image'
 import Meta from '../components/Meta'
+import PricePlan from '../components/PricePlan';
 
 const offers = () => {
 
@@ -37,6 +38,46 @@ const offers = () => {
 
     ]
 
+    const pricePlan = [
+        {
+            price: '499 €',
+            title: `100% personnalisé Framer`,
+            description: `L’offre complète pour les sites vitrines avec un design sur-mesure`,
+            subsription: [`· Payé annuellement : 18€ TTC/mois`, `· Mensuellement : 24€ TTC/mois`],
+            hosting: `Inclus dans l’abonnement`,
+            techno: `Framer`,
+            include: [`· Design 100% personnalisé`, `· Rédaction des textes`, `· 1 Collection de Contenu Gérable`, `· Création de site web`, `· Mise en ligne de site web`],
+        },
+        {
+            price: '599 €*',
+            title: `Basique Wordpress`,
+            ps: `*En supplément du coût du thème, si celui-ci est payant.`,
+            description: `L’offre basique pour les sites vitrines avec un thème existant`,
+            subsription: `Pas d’abonnement la première année`,
+            hosting: `Offert la première année avec Ionos`,
+            techno: `Wordpress & Ionos`,
+            include: [`· Design 100% personnalisé`, `· Rédaction des textes`, `· 1 Collection de Contenu Gérable`, `· Création de site web`, `· Mise en ligne de site web`],
+        },
+        {
+            price: '1199 €',
+            title: `100% personnalisé Wordpress`,
+            description: `L’offre complète pour les sites haut de gamme et e-commerce avec un design sur-mesure`,
+            subsription: `Pas d’abonnement la première année`,
+            hosting: `Offert la première année avec Ionos`,
+            techno: `Wordpress & Ionos`,
+            include: [`· Design 100% personnalisé`, `· Rédaction des textes`, `· 1 Collection de Contenu Gérable`, `· Création de site web`, `· Mise en ligne de site web`],
+        },
+        {
+            price: 'Custom',
+            title: `Application Web custom`,
+            description: `L’offre sur-mesure pour des application web custom`,
+            subsription: `Suivant les besoins`,
+            hosting: `Suivant les besoins`,
+            techno: [`Frontend : Next.js, React, JS`, `Backend : Node.js, Superbase, Express`],
+            include: ``,
+        },
+    ]
+
 
     return (
         <div>
@@ -58,13 +99,35 @@ const offers = () => {
                     </div>
                 </div>
                 <p>Toute votre transition digitale, au même endroit.</p>
-            </section >
-            <section className='offresSection'>
-                {
-                    offers.map((offer, index) => (
-                        <Offers key={index} offer={offer} />
-                    ))
-                }
+            </section>
+            <section className='pricePlanSection'>
+                <div className='pricePlanSection__title'>
+                    <h2>Nos offres</h2>
+                    <p>Nous avons des solutions adaptées à tous les besoins.</p>
+                </div>
+
+                <div className='pricePlan'>
+                    {
+                        pricePlan.map((pricePlan, index) => (
+                            <PricePlan key={index} pricePlan={pricePlan} />
+                        ))
+                    }
+                </div>
+
+            </section>
+            <section className=''>
+
+                <div className='pricePlanSection__title'>
+                    <h2>Nos Compétences</h2>
+                    <p>Nous avons des solutions adaptées à tous les besoins.</p>
+                </div>
+                <div className='offresSection'>
+                    {
+                        offers.map((offer, index) => (
+                            <Offers key={index} offer={offer} />
+                        ))
+                    }
+                </div>
             </section>
             <ScrollButton />
             <ContactUs />
