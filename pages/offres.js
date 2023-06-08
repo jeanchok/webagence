@@ -129,6 +129,123 @@ const offers = () => {
                     }
                 </div>
             </section>
+            <section className=''>
+
+                <div className='pricePlanSection__title'>
+                    <h2>Notre processus de création de site web</h2>
+                </div>
+                <div className='process'>
+                    <div className='process__left'>
+                        <div className='process__card'>
+                            <div className='process__card--number'>
+                                <p>1</p>
+                            </div>
+                            <div className='process__card--text'>
+                                <h3>
+                                    Questionnaire
+                                </h3>
+                                <p>
+                                    Commencez par remplir notre questionnaire détaillé. Cela nous aidera à comprendre vos besoins et à vous orienter vers l'offre la plus adaptée à vos attentes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='process__right--empty'>
+
+                    </div>
+                    <div className='process__left--empty'>
+
+                    </div>
+                    <div className='process__right'>
+                        <div className='process__card'>
+                            <div className='process__card--number'>
+                                <p>2</p>
+                            </div>
+                            <div className='process__card--text'>
+                                <h3>
+                                    Choix de l'offre
+                                </h3>
+                                <p>
+                                    En fonction de vos réponses, nous vous recommanderons l'offre la plus adaptée à vos besoins. Vous aurez le choix entre différentes options pour satisfaire vos demandes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='process__left'>
+                        <div className='process__card'>
+                            <div className='process__card--number'>
+                                <p>3</p>
+                            </div>
+                            <div className='process__card--text'>
+                                <h3>
+                                    Mood Board & Schéma du site
+                                </h3>
+                                <p>
+                                    Nous créons d'abord un Mood Board pour visualiser vos préférences en matière de design. Ensuite, grâce à Octopus, nous élaborons un schéma du site pour déterminer l'ordre et la disposition des sections.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='process__right--empty'>
+
+                    </div>
+                    <div className='process__left--empty'>
+
+                    </div>
+                    <div className='process__right'>
+                        <div className='process__card'>
+                            <div className='process__card--number'>
+                                <p>4</p>
+                            </div>
+                            <div className='process__card--text'>
+                                <h3>
+                                    Création du design sur Figma
+                                </h3>
+                                <p>
+                                    Avec votre Mood Board et votre schéma de site en main, nous commençons à créer le design de votre site sur Figma. Nous veillons à ce que chaque élément corresponde à vos goûts et à vos objectifs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='process__left'>
+                        <div className='process__card'>
+                            <div className='process__card--number'>
+                                <p>5</p>
+                            </div>
+                            <div className='process__card--text'>
+                                <h3>
+                                    Ajustements suivant vos retours
+                                </h3>
+                                <p>
+                                    Nous sommes ouverts à vos retours et suggestions. Nous ferons des ajustements en fonction de vos commentaires pour assurer que le design final vous satisfait pleinement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='process__right--empty'>
+
+                    </div>
+                    <div className='process__left--empty'>
+
+                    </div>
+                    <div className='process__right'>
+                        <div className='process__card'>
+                            <div className='process__card--number'>
+                                <p> 6</p>
+                            </div>
+                            <div className='process__card--text'>
+                                <h3>
+                                    Déploiement du site
+                                </h3>
+                                <p>
+                                    Une fois que le design est approuvé, nous nous chargeons de déployer votre site. Il sera entièrement fonctionnel et prêt à impressionner vos visiteurs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
             <ScrollButton />
             <ContactUs />
         </div>
