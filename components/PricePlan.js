@@ -18,7 +18,7 @@ const PricePlan = ({ pricePlan }) => {
             </div>
             {
                 (pricePlan.title === `Basique Wordpress`) ?
-                    <p key={index}> {pricePlan.ps}</p>
+                    <p> {pricePlan.ps}</p>
                     :
                     null
             }
