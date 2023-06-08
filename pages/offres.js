@@ -145,7 +145,7 @@ const offers = () => {
                                     Questionnaire
                                 </h3>
                                 <p>
-                                    Commencez par remplir notre questionnaire détaillé. Cela nous aidera à comprendre vos besoins et à vous orienter vers l'offre la plus adaptée à vos attentes.
+                                    Commencez par remplir notre questionnaire détaillé. Cela nous aidera à comprendre vos besoins et à vous orienter vers l&apos;offre la plus adaptée à vos attentes.
                                 </p>
                             </div>
                         </div>
@@ -163,10 +163,10 @@ const offers = () => {
                             </div>
                             <div className='process__card--text'>
                                 <h3>
-                                    Choix de l'offre
+                                    Choix de l&apos;offre
                                 </h3>
                                 <p>
-                                    En fonction de vos réponses, nous vous recommanderons l'offre la plus adaptée à vos besoins. Vous aurez le choix entre différentes options pour satisfaire vos demandes.
+                                    En fonction de vos réponses, nous vous recommanderons l&apos;offre la plus adaptée à vos besoins. Vous aurez le choix entre différentes options pour satisfaire vos demandes.
                                 </p>
                             </div>
                         </div>
@@ -181,7 +181,7 @@ const offers = () => {
                                     Mood Board & Schéma du site
                                 </h3>
                                 <p>
-                                    Nous créons d'abord un Mood Board pour visualiser vos préférences en matière de design. Ensuite, grâce à Octopus, nous élaborons un schéma du site pour déterminer l'ordre et la disposition des sections.
+                                    Nous créons d&apos;abord un Mood Board pour visualiser vos préférences en matière de design. Ensuite, grâce à Octopus, nous élaborons un schéma du site pour déterminer l&apos;ordre et la disposition des sections.
                                 </p>
                             </div>
                         </div>

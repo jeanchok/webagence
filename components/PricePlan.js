@@ -18,7 +18,7 @@ const PricePlan = ({ pricePlan }) => {
             </div>
             {
                 (pricePlan.title === `Basique Wordpress`) ?
-                    <p> {pricePlan.ps}</p>
+                    <p key={index}> {pricePlan.ps}</p>
                     :
                     null
             }
@@ -29,7 +29,7 @@ const PricePlan = ({ pricePlan }) => {
                         (pricePlan.title === `100% personnalisé Framer`) ?
 
                             pricePlan.subsription.map((subsription, index) => (
-                                <p>{subsription}</p>
+                                <p key={index}>{subsription}</p>
                             ))
                             :
                             <p> {pricePlan.subsription}</p>
@@ -53,7 +53,7 @@ const PricePlan = ({ pricePlan }) => {
                             <div className='pricePlanCard__tech--text'>
                                 {
                                     pricePlan.techno.map((techno, index) => (
-                                        <p>{techno}</p>
+                                        <p key={index}>{techno}</p>
                                     ))
                                 }
                             </div>
@@ -73,7 +73,7 @@ const PricePlan = ({ pricePlan }) => {
                             <div className='pricePlanCard__include--text'>
                                 {
                                     pricePlan.include.map((include, index) => (
-                                        <p>{include}</p>
+                                        <p key={index}>{include}</p>
                                     ))
                                 }
                             </div>
