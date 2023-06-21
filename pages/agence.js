@@ -27,7 +27,7 @@ const agence = () => {
                         </h1>
                     </div>
                 </div>
-                <p>Découvrez notre agence</p>
+                <p>Découvrez notre agence.</p>
             </section >
             <section className='agenceTexte'>
                 <h2>

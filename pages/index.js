@@ -65,7 +65,7 @@ export default function Home() {
     <>
       <Head />
       <Meta
-        title={"Webzh Agence | Donnez vie à vos projets projets"}
+        title={"Webzh Agence | Donnez vie à vos projets"}
         description={"Envie de créer un site web ou une application web ? Vous êtes au bon endroit !"}
       />
       <Header />
@@ -83,7 +83,7 @@ export default function Home() {
           </div>
 
         </div>
-        <p>L’agence web à l’échelle humaine, pour donner vie à vos projets</p>
+        <p>L’agence web à l’échelle humaine, pour donner vie à vos projets.</p>
       </section>
 
       <section data-aos="fade-up" data-aos-duration="4000" className="section2">
