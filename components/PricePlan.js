@@ -51,17 +51,15 @@ const PricePlan = ({ pricePlan }) => {
                             <div className='pricePlanCard__tech--text'>
                                 {pricePlan.techno}
                             </div>
-                        </div>
-                        <div className='pricePlanCard__include'>
-                            <h3>Inclus</h3>
-                            <div className='pricePlanCard__include--text'>
-                                {
-                                    pricePlan.include.map((include, index) => (
-                                        <p key={index}>{include}</p>
-                                    ))
-                                }
-                            </div>
                         </div>*/}
+          <div className="pricePlanCard__include">
+            <h3>Inclus</h3>
+            <div className="pricePlanCard__include--text">
+              {pricePlan.include.map((include, index) => (
+                <p key={index}>{include}</p>
+              ))}
+            </div>
+          </div>
         </>
       )}
     </div>
