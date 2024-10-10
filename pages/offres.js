@@ -47,11 +47,28 @@ const offers = () => {
     //    include: [`· Design 100% personnalisé`, `· Rédaction des textes`, `· 1 Collection de Contenu Gérable`, `· Création de site web`, `· Mise en ligne de site web`],
     //},
     {
-      price: "897 $*",
-      title: "Basique",
+      price: "800 $",
+      title: "1 Page - Basique",
       ps: "*En supplément du coût du thème, si celui-ci est payant.",
       description:
-        "L’offre basique pour les sites vitrines avec un thème existant.",
+        "L’offre basique pour les sites 1 page avec un thème sur-mesure.",
+      subsription: "Abonnement à partir de 27 $/mois",
+      hosting: "Nom de domaine gratuit la première année",
+      techno: "Wix",
+      include: [
+        "· Site vitrine",
+        "· 1 pages",
+        "· Design responsive",
+        "· Google Map",
+        "· SEO",
+      ],
+    },
+    {
+      price: "1400 $",
+      title: "Basique+",
+      ps: "*En supplément du coût du thème, si celui-ci est payant.",
+      description:
+        "L’offre basique pour les sites vitrines avec un thème sur-mesure.",
       subsription: "Abonnement à partir de 27 $/mois",
       hosting: "Nom de domaine gratuit la première année",
       techno: "Wix",
@@ -64,10 +81,10 @@ const offers = () => {
       ],
     },
     {
-      price: "1497 $",
+      price: "2000 $",
       title: "Premium",
       description:
-        "L’offre complète pour les sites haut de gamme et e-commerce avec un design sur-mesure.",
+        "L’offre complète pour les sites haut de gamme avec un design sur-mesure.",
       subsription: "Abonnement à partir de 27 $/mois",
       hosting: "Nom de domaine gratuit la première année",
       techno: "Wix",
@@ -182,9 +199,9 @@ const offers = () => {
                 <h3>Mood Board & Schéma du site</h3>
                 <p>
                   Nous créons d&apos;abord un Mood Board pour visualiser vos
-                  préférences en matière de design. Ensuite, grâce à Octopus,
-                  nous élaborons un schéma du site pour déterminer l&apos;ordre
-                  et la disposition des sections.
+                  préférences en matière de design. Ensuite, nous élaborons un
+                  schéma du site pour déterminer l&apos;ordre et la disposition
+                  des sections.
                 </p>
               </div>
             </div>
@@ -197,12 +214,11 @@ const offers = () => {
                 <p>4</p>
               </div>
               <div className="process__card--text">
-                <h3>Création du design sur Figma</h3>
+                <h3>Création du design</h3>
                 <p>
                   Avec votre Mood Board et votre schéma de site en main, nous
-                  commençons à créer le design de votre site sur Figma. Nous
-                  veillons à ce que chaque élément corresponde à vos goûts et à
-                  vos objectifs.
+                  commençons à créer le design de votre site. Nous veillons à ce
+                  que chaque élément corresponde à vos goûts et à vos objectifs.
                 </p>
               </div>
             </div>

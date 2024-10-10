@@ -29,8 +29,8 @@ const agence = () => {
         <p>
           Notre agence web basée à Montréal. Etant tous les 3 développeurs de
           métier, notre champ d’action gravite autour de la création de sites et
-          d’applications webs. Nous sommes une Agence familiale à échelle
-          humaine très à l’écoute de nos clients et de leurs besoins.
+          d’applications webs. Nous sommes une Agence à échelle humaine très à
+          l’écoute de nos clients et de leurs besoins.
         </p>
       </section>
       <section className="agenceImages">
@@ -64,7 +64,7 @@ const agence = () => {
               alt="photo développeur medhi"
             ></img>
           </div>
-          <h3>Medhi K.</h3>
+          <h3>Mehdi K.</h3>
           <p>Développeur Web</p>
         </div>
       </section>
