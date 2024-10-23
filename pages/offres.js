@@ -27,7 +27,7 @@ const offers = () => {
     {
       logoSrc: "./img/imgSite/entretien.png",
       title: `Maintenance`,
-      text: `Ne laissez pas les problèmes techniques freiner votre activité en ligne. Notre équipe d'experts maîtrise diverses technologies, telles que Wordpress, JavaScript, React, Node.js, pour résoudre vos problèmes et apporter des améliorations à votre site web. N'hésitez pas à nous contacter pour discuter de vos besoins et bénéficier d'un service sur-mesure !`,
+      text: `Ne laissez pas les problèmes techniques freiner votre activité en ligne. Notre équipe d'experts sont là pour résoudre vos problèmes et apporter des améliorations à votre site web. N'hésitez pas à nous contacter pour discuter de vos besoins et bénéficier d'un service sur-mesure ! (à partir de 100$ / mois)`,
     },
     {
       logoSrc: "./img/imgSite/20943456.png",

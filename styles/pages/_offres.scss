@@ -1,248 +1,233 @@
 .offresSection {
-    margin-bottom: 100px;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 60px;
-    grid-row-gap: 60px;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
 
-    @include mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        justify-content: center;
-    }
-
-    @include tablette-only {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-    &__Card {
-        display: flex;
-        flex-direction: row;
-        margin-top: 50px;
-
-        @include tablette-only {
-            flex-direction: column;
-        }
-
-        @include mobile() {
-            flex-direction: column;
-        }
-
-        @include mobileS {
-            flex-direction: column;
-        }
-
-        &--Text {
-            display: flex;
-            flex-direction: column;
-
-            &--right {
-                margin: auto;
-                margin-left: 25px;
-
-                @include mobile {
-                    margin-left: 0;
-                }
-
-                h2 {
-                    text-align: left;
-                    @include titlePink
-                }
-
-                p {
-                    text-align: justify;
-                }
-            }
-
-            &--left {
-                margin: auto;
-                margin-right: 25px;
-
-                h2 {
-                    text-align: right;
-                    @include titlePink
-                }
-
-                p {
-                    text-align: justify;
-                }
-            }
-
-
-        }
-
-        img {
-            width: 220px;
-            height: 220px;
-
-            @include LowerThanTablette {
-                width: 100%;
-                object-fit: contain;
-            }
-        }
-    }
-}
-
-.offersCard {
+  @include mobile {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    width: 100%;
     justify-content: center;
-    gap: 16px;
+  }
 
-    border-radius: 5px;
-    padding: 36px;
+  @include tablette-only {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 
-    border-radius: 5px;
-    background: #ffffff;
-    box-shadow: 20px 20px 60px #d9d9d9,
-        -20px -20px 60px #ffffff;
+  &__Card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
 
     @include tablette-only {
-        width: 90%;
+      flex-direction: column;
     }
 
     @include mobile() {
-        width: 90%;
+      flex-direction: column;
     }
 
     @include mobileS {
-        width: 90%;
+      flex-direction: column;
     }
 
+    &--Text {
+      display: flex;
+      flex-direction: column;
 
-    &__header {
-        display: flex;
+      &--right {
+        margin: auto;
+        margin-left: 25px;
+
+        @include mobile {
+          margin-left: 0;
+        }
+
+        h2 {
+          text-align: left;
+          @include titlePink;
+        }
+
+        p {
+          text-align: justify;
+        }
+      }
+
+      &--left {
+        margin: auto;
+        margin-right: 25px;
+
+        h2 {
+          text-align: right;
+          @include titlePink;
+        }
+
+        p {
+          text-align: justify;
+        }
+      }
+    }
+
+    img {
+      width: 220px;
+      height: 220px;
+
+      @include LowerThanTablette {
         width: 100%;
-        gap: 8px;
+        object-fit: contain;
+      }
+    }
+  }
+}
 
+.offersCard {
+  display: flex;
+  flex-direction: column;
 
-        h3 {
-            font-size: 26px;
-            justify-content: center;
-            display: flex;
-            align-items: center;
+  justify-content: center;
+  gap: 16px;
 
-        }
+  border-radius: 5px;
+  padding: 36px;
 
-        img {
-            width: 80px;
-            height: 80px;
-        }
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+
+  @include tablette-only {
+    width: 90%;
+  }
+
+  @include mobile() {
+    width: 90%;
+  }
+
+  @include mobileS {
+    width: 90%;
+  }
+
+  &__header {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+
+    h3 {
+      font-size: 26px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
     }
 
-    &__bar {
-        width: 80%;
-        border-bottom: 2px rgb(41, 41, 41) solid;
+    img {
+      width: 80px;
+      height: 80px;
     }
+  }
 
-    &__text {
-        text-align: center;
-        font-size: 24px;
-    }
+  &__bar {
+    width: 80%;
+    border-bottom: 2px rgb(41, 41, 41) solid;
+  }
+
+  &__text {
+    text-align: left;
+    font-size: 24px;
+  }
 }
 
 .process {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    grid-row-gap: 24px;
+  }
+
+  h3 {
+    font-size: 26px;
+    color: $pink;
+  }
+
+  &__left--empty {
+    border-right: 2px solid $pink;
+  }
+
+  &__left {
+    border-right: 2px solid $pink;
+
+    .process__card {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      text-align: right;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: row;
+        text-align: left;
+        height: 100%;
+      }
+    }
 
     @media screen and (max-width: 992px) {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-row-gap: 24px;
+      border-right: none;
     }
+  }
 
-    h3 {
-        font-size: 26px;
-        color: $pink;
+  &__right {
+    // border-left: 2px solid $pink ;
+
+    .process__card {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+
+      @media screen and (max-width: 992px) {
+        height: 100%;
+      }
     }
+  }
 
+  @media screen and (max-width: 992px) {
+    &__right--empty,
     &__left--empty {
-        border-right: 2px solid $pink ;
+      display: none;
     }
+  }
 
-    &__left {
-        border-right: 2px solid $pink ;
+  &__card--number {
+    padding: 20px 30px;
 
-        .process__card {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
-            align-items: center;
-            text-align: right;
-
-            @media screen and (max-width: 992px) {
-                flex-direction: row;
-                text-align: left;
-                height: 100%;
-
-            }
-
-        }
-
-        @media screen and (max-width: 992px) {
-            border-right: none;
-        }
-
+    p {
+      border: 2px solid $pink;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      color: $pink;
+      font-weight: 700;
     }
-
-    &__right {
-        // border-left: 2px solid $pink ;
-
-
-        .process__card {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            text-align: left;
-
-            @media screen and (max-width: 992px) {
-                height: 100%;
-
-            }
-
-        }
-    }
-
-    @media screen and (max-width: 992px) {
-
-        &__right--empty,
-        &__left--empty {
-            display: none;
-        }
-
-
-    }
-
-    &__card--number {
-        padding: 20px 30px;
-
-        p {
-            border: 2px solid $pink;
-            border-radius: 50px;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 26px;
-            color: $pink;
-            font-weight: 700;
-        }
-    }
+  }
 }
