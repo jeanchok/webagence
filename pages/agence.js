@@ -8,7 +8,7 @@ const agence = () => {
   return (
     <>
       <Meta
-        title={"Webzh Agence | Notre Agence"}
+        title={"Webmtl Agence | Notre Agence"}
         description={
           "Envie de créer un site web ou une application web ? Vous êtes au bon endroit !"
         }
@@ -25,7 +25,7 @@ const agence = () => {
         <p>Découvrez notre agence.</p>
       </section>
       <section className="agenceTexte">
-        <h2>Webzh Agence</h2>
+        <h2>Webmtl Agence</h2>
         <p>
           Notre agence web basée à Montréal. Etant tous les 3 développeurs de
           métier, notre champ d’action gravite autour de la création de sites et
@@ -60,7 +60,7 @@ const agence = () => {
           <div className="agenceImages__Container">
             <img
               className="agenceImages__Container--img"
-              src="/img/imgSite/avatarmedhi.png"
+              src="/img/imgSite/mehdi.jpeg"
               alt="photo développeur medhi"
             ></img>
           </div>

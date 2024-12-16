@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -15,16 +19,38 @@ a {
   box-sizing: border-box;
 }
 
-.ContactUs__Container {
-  border: #0070f3 solid 1px;
+@keyframes borderRotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.Footer__container {
-  border: #FF6060 solid 1px;
-  position: fixed;
-  padding: 10px 10px 0px 10px;
-  bottom: 0;
-  width: 100%;
-  /* Height of the footer*/
-  background: rgb(241, 241, 241);
+.animated-border {
+  position: relative;
+  background: white;
+}
+
+.animated-border::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  background: linear-gradient(90deg, white, #ff9797, white, #ff9797);
+  background-size: 400% 400%;
+  z-index: -1;
+  border-radius: 10px;
+  animation: 3s linear infinite, gradient 10s linear infinite;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  padding: 10px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
 }

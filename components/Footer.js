@@ -43,7 +43,7 @@ const Footer = () => {
             // </div>
           }
         </div>
-        <p>© Webzh Agence 2022 - Tous droits réservés</p>
+        <p>© Webmtl Agence 2022 - Tous droits réservés</p>
         <Link href="/mentionslegales" className="mentionsLink">
           Mentions Légales
         </Link>

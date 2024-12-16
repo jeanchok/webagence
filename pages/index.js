@@ -79,7 +79,7 @@ export default function Home() {
         }
       />
       <Header />
-      <section className="header_textContainer">
+      <section className="header_textContainer relative pb-[100px]">
         <div className="header_textContainer--flex">
           {/* <h1>Design. <br />
             Création de site. <br />
@@ -90,10 +90,28 @@ export default function Home() {
             <h1>Applications web.</h1>
           </div>
         </div>
-        <p>L’agence web à l’échelle humaine, pour donner vie à vos projets.</p>
+        <p className="sm:pb-[50px]">
+          L’agence web à l’échelle humaine, pour donner vie à vos projets.
+        </p>
+        <div className="absolute -bottom-[150px] sm:-bottom-[80px] left-0 right-0 flex flex-col items-center justify-center gap-4 z-10">
+          <div className="animated-border flex flex-col items-center justify-center gap-4 w-4/5 p-4 bg-white rounded-md">
+            <span className="text-[#FF6060] font-semibold sm:text-3xl text-xl text-center">
+              Demandez votre devis gratuit
+            </span>
+            <Link href="https://forms.gle/DoXGPtBHLjyKdhyJA" target="_blank">
+              <div className="cursor-pointer py-2 px-4 bg-[#FF6060] border-2 text-white rounded-sm w-[100px] text-center transition-all duration-300 hover:border-[#FF6060] hover:bg-white hover:text-[#FF6060] text-xl">
+                Devis
+              </div>
+            </Link>
+          </div>
+        </div>
       </section>
 
-      <section data-aos="fade-up" data-aos-duration="4000" className="section2">
+      <section
+        data-aos="fade-up"
+        data-aos-duration="4000"
+        className="section2 pt-10"
+      >
         <img
           layout="fill"
           src={"/img/imgSite/laptop-2298286.png"}
@@ -204,6 +222,63 @@ export default function Home() {
             </div>
           ))}
         </AliceCarousel>
+      </section>
+      <section>
+        <h2 className="mt-[50px] mb-[25px] font-bold text-[64px] text-[#FF6060]">
+          Vos Avis
+        </h2>
+        <div className="flex flex-wrap justify-center gap-8 mb-20 px-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm">
+            <div className="flex items-center mb-4">
+              <div className="h-12 w-12 rounded-full bg-[#FF6060] flex items-center justify-center text-white text-xl font-bold">
+                YB
+              </div>
+              <div className="ml-4">
+                <h3 className="font-bold">Yohann B.</h3>
+                <p className="text-gray-600">Gérant de site e-commerce</p>
+              </div>
+            </div>
+            <p className="text-gray-700 italic">
+              "Une équipe à l'écoute qui a parfaitement compris nos besoins.
+              Notre nouveau site est moderne, facile à utiliser et nous a permis
+              d'augmenter notre visibilité. Je recommande vivement !"
+            </p>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm">
+            <div className="flex items-center mb-4">
+              <div className="h-12 w-12 rounded-full bg-[#FF6060] flex items-center justify-center text-white text-xl font-bold">
+                RD
+              </div>
+              <div className="ml-4">
+                <h3 className="font-bold">Rozenn D.</h3>
+                <p className="text-gray-600">Tisserande</p>
+              </div>
+            </div>
+            <p className="text-gray-700 italic">
+              "Grâce à Webzh, j'ai enfin un site qui représente mon
+              savoir-faire. Le design est soigné et le suivi est impeccable. Un
+              vrai plus pour mon activité !"
+            </p>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm">
+            <div className="flex items-center mb-4">
+              <div className="h-12 w-12 rounded-full bg-[#FF6060] flex items-center justify-center text-white text-xl font-bold">
+                VP
+              </div>
+              <div className="ml-4">
+                <h3 className="font-bold">Victor P.</h3>
+                <p className="text-gray-600">Entrepreneur</p>
+              </div>
+            </div>
+            <p className="text-gray-700 italic">
+              "Un travail professionnel du début à la fin. L'équipe a su mettre
+              en valeur nos projets avec un site élégant qui correspond
+              parfaitement à notre image. Je n'hésite pas à les recommander."
+            </p>
+          </div>
+        </div>
       </section>
       <ContactUs />
     </>
