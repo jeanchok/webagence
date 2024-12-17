@@ -14,7 +14,7 @@ const projets = () => {
   return (
     <>
       <Meta
-        title={"Webzh Agence - Nos projets"}
+        title={"Webmtl Agence - Nos projets"}
         description={
           "Vous trouverez ici tout les principaux projets web que nous avons créé."
         }

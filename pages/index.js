@@ -73,7 +73,7 @@ export default function Home() {
     <>
       <Head />
       <Meta
-        title={"Webzh Agence | Donnez vie à vos projets"}
+        title={"Webmtl Agence | Donnez vie à vos projets"}
         description={
           "Envie de créer un site web ou une application web ? Vous êtes au bon endroit !"
         }

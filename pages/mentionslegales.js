@@ -6,7 +6,7 @@ const mentionslegales = () => {
   return (
     <div>
       <Meta
-        title={"Webzh Agence | Mentions légales"}
+        title={"Webmtl Agence | Mentions légales"}
         description={
           "Envie de créer un site web ou une application web ? Vous êtes au bon endroit !"
         }
@@ -21,7 +21,7 @@ const mentionslegales = () => {
           <br />
           <b>Site </b>
           <br />
-          https://www.webzhagence.com
+          https://www.webmtl.site
           <br />
           <b>Éditeur</b>
           <br />
@@ -37,7 +37,7 @@ const mentionslegales = () => {
           <br />
           <b>Conditions d’utilisation du site</b>
           <br />
-          La navigation sur le site https://www.webzhagence.com implique
+          La navigation sur le site https://www.www.webmtl.site implique
           l'acceptation pleine et entière des conditions générales
           d'utilisation. Ces conditions peuvent être modifiées à tout moment,
           les utilisateurs sont donc invités à les consulter régulièrement.
@@ -72,10 +72,9 @@ const mentionslegales = () => {
           <br />
           <b>Liens hypertextes</b>
           <br />
-          La création de liens hypertextes vers le site
-          https://www.webzhagence.com est soumise à l'autorisation préalable de
-          l'éditeur. L'éditeur se réserve le droit de demander la suppression de
-          tout lien non autorisé.
+          La création de liens hypertextes vers le site https://www.webmtl.site
+          est soumise à l'autorisation préalable de l'éditeur. L'éditeur se
+          réserve le droit de demander la suppression de tout lien non autorisé.
           <br />
           <b>Droit applicable – Juridiction compétente</b>
           <br />
