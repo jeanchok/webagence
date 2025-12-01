@@ -139,7 +139,7 @@ section {
 
 .header_textContainer {
   padding: 0;
-  height: 518px;
+  /* height: 518px; Removed to fix responsive overlap */
 }
 
 .header_textContainer h1 {
@@ -287,7 +287,7 @@ section {
        object-fit: contain;
     height: 100%;
     z-index: -10;
-    margin-top: 50px;
+    margin-top: 150px;
   }
 }
 
@@ -1404,8 +1404,10 @@ h1 {
   padding-bottom: 36px;
   border-radius: 5px;
   background: #ffffff;
-  -webkit-box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
-          box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  -webkit-box-shadow: 20px 20px 60px #d9d9d9,
+ -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #d9d9d9,
+ -20px -20px 60px #ffffff;
 }
 
 @media screen and (max-width: 768px) {

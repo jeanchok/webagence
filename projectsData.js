@@ -19,7 +19,7 @@ export const projects = [
       "Création d'un SAAS (Software As A Service) d'intelligence artificielle",
     img: "/img/projet-6.webp",
     mockup: "/img/projet-6.webp",
-    link: "https://eurekia.xyz/",
+    link: "https://aissistant-mu.vercel.app/",
   },
   {
     id: 3,
