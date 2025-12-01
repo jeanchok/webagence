@@ -3,6 +3,8 @@ import emailjs from "@emailjs/browser";
 import Header from "../components/Header";
 import Meta from "../components/Meta";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   const [message, setMessage] = useState(false);
@@ -154,7 +156,7 @@ const Contact = () => {
                         <div className="space-y-6 relative z-10">
                             <div className="flex items-start space-x-4">
                                 <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <i className="fas fa-map-marker-alt text-[#FF6060] text-xl"></i>
+                                    <FontAwesomeIcon icon={faMapMarkerAlt} />
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-lg">Localisation</h3>
@@ -163,7 +165,7 @@ const Contact = () => {
                             </div>
                             <div className="flex items-start space-x-4">
                                 <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <i className="fas fa-phone text-[#FF6060] text-xl"></i>
+                                    <FontAwesomeIcon icon={faPhone} />
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-lg">Téléphone</h3>
@@ -174,7 +176,7 @@ const Contact = () => {
                             </div>
                             <div className="flex items-start space-x-4">
                                 <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                    <i className="fas fa-envelope text-[#FF6060] text-xl"></i>
+                                    <FontAwesomeIcon icon={faEnvelope} />
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-lg">Email</h3>

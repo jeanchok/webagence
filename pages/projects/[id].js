@@ -12,7 +12,7 @@ const project = ({ project }) => {
       <p>{project.infos}</p>
       <img layout='fill' src={path + project.img} alt={project.title} />
       <Link href="/portfolio">
-        <a>Revenir aux projets</a>
+        Revenir aux projets
       </Link>
     </div>
   );

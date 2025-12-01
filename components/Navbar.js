@@ -23,35 +23,28 @@ const Navbar = () => {
             <ul className={!menuClass ? 'none' : 'list'}>
                 <div className={'listInner'}>
                     <li className={router.pathname == "/" ? "activeLine" : ""}>
-                        <Link href="/">
-                            <a className={router.pathname == "/" ? "active" : ""}>
-                                Accueil
-                            </a></Link>
+                        <Link href="/" className={router.pathname == "/" ? "active" : ""}>
+                            Accueil
+                        </Link>
                     </li>
                     <li className={router.pathname == "/projets" ? "activeLine" : ""}>
-                        <Link href="/projets">
-                            <a className={router.pathname == "/projets" ? "active" : ""}>
-                                Projets
-                            </a></Link>
+                        <Link href="/projets" className={router.pathname == "/projets" ? "active" : ""}>
+                            Projets
+                        </Link>
                     </li>
                     <li className={router.pathname == "/offres" ? "activeLine" : ""}>
-                        <Link href="/offres">
-                            <a className={router.pathname == "/offres" ? "active" : ""}>
-                                Nos offres
-                            </a></Link>
+                        <Link href="/offres" className={router.pathname == "/offres" ? "active" : ""}>
+                            Nos offres
+                        </Link>
                     </li>
                     <li className={router.pathname == "/agence" ? "activeLine" : ""}>
-                        <Link href="/agence">
-                            <a className={router.pathname == "/agence" ? "active" : ""}>
-                                L&apos;agence
-                            </a>
+                        <Link href="/agence" className={router.pathname == "/agence" ? "active" : ""}>
+                            L&apos;agence
                         </Link>
                     </li>
                     <li className={router.pathname == "/contact" ? "activeLine" : ""}>
-                        <Link href="/contact">
-                            <a className={router.pathname == "/contact" ? "active" : ""}>
-                                Contact
-                            </a>
+                        <Link href="/contact" className={router.pathname == "/contact" ? "active" : ""}>
+                            Contact
                         </Link>
                     </li>
                 </div>

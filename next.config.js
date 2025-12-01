@@ -5,12 +5,12 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   reactStrictMode: true,
-  images: {
-    loader: "",
-    path: "",
+  compiler: {
+    styledComponents: true,
   },
-  contentSecurityPolicy:
-    "default-src 'none'; script-src 'self'; style-src 'nonce-{style-nonce}'; connect-src 'self'; img-src 'self'; font-src 'self'; base-uri 'self'; child-src 'self';",
+  images: {
+    unoptimized: true, // Disable image optimization for static export compatibility
+  },
 };
 
 module.exports = nextConfig;
