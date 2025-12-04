@@ -47,7 +47,7 @@ const offers = () => {
     //    include: [`· Design 100% personnalisé`, `· Rédaction des textes`, `· 1 Collection de Contenu Gérable`, `· Création de site web`, `· Mise en ligne de site web`],
     //},
     {
-      price: "800 $",
+      price: "Sur devis",
       title: "1 Page - Basique",
       ps: "*En supplément du coût du thème, si celui-ci est payant.",
       description:
@@ -64,7 +64,7 @@ const offers = () => {
       ],
     },
     {
-      price: "1400 $",
+      price: "Sur devis",
       title: "Basique+",
       ps: "*En supplément du coût du thème, si celui-ci est payant.",
       description:
@@ -81,7 +81,7 @@ const offers = () => {
       ],
     },
     {
-      price: "2000 $",
+      price: "Sur devis",
       title: "Premium",
       description:
         "L’offre complète pour les sites haut de gamme avec un design sur-mesure.",
@@ -99,7 +99,7 @@ const offers = () => {
       ],
     },
     {
-      price: "Custom",
+      price: "Sur devis",
       title: `Application Web custom`,
       description: `L’offre sur-mesure pour des application web custom`,
       subsription: `Suivant les besoins`,

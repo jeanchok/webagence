@@ -11,6 +11,10 @@ const Navbar = () => {
     const changeClass = () => {
         setMenuClass(!menuClass);
     }
+
+    const closeMenu = () => {
+        setMenuClass(false);
+    }
     return (
 
 
@@ -20,29 +24,29 @@ const Navbar = () => {
                 <div className="bar2"></div>
                 <div className="bar3"></div>
             </button>
-            <ul className={!menuClass ? 'none' : 'list'}>
+            <ul className={menuClass ? 'list active' : 'list'}>
                 <div className={'listInner'}>
-                    <li className={router.pathname == "/" ? "activeLine" : ""}>
+                    <li className={router.pathname == "/" ? "activeLine" : ""} onClick={closeMenu}>
                         <Link href="/" className={router.pathname == "/" ? "active" : ""}>
                             Accueil
                         </Link>
                     </li>
-                    <li className={router.pathname == "/projets" ? "activeLine" : ""}>
+                    <li className={router.pathname == "/projets" ? "activeLine" : ""} onClick={closeMenu}>
                         <Link href="/projets" className={router.pathname == "/projets" ? "active" : ""}>
                             Projets
                         </Link>
                     </li>
-                    <li className={router.pathname == "/offres" ? "activeLine" : ""}>
+                    <li className={router.pathname == "/offres" ? "activeLine" : ""} onClick={closeMenu}>
                         <Link href="/offres" className={router.pathname == "/offres" ? "active" : ""}>
                             Nos offres
                         </Link>
                     </li>
-                    <li className={router.pathname == "/agence" ? "activeLine" : ""}>
+                    <li className={router.pathname == "/agence" ? "activeLine" : ""} onClick={closeMenu}>
                         <Link href="/agence" className={router.pathname == "/agence" ? "active" : ""}>
                             L&apos;agence
                         </Link>
                     </li>
-                    <li className={router.pathname == "/contact" ? "activeLine" : ""}>
+                    <li className={router.pathname == "/contact" ? "activeLine" : ""} onClick={closeMenu}>
                         <Link href="/contact" className={router.pathname == "/contact" ? "active" : ""}>
                             Contact
                         </Link>

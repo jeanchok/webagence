@@ -103,10 +103,9 @@
     }
 
     .navbar button {
-        z-index: 11;
+        z-index: 100; // Ensure button is always on top
         margin-left: 85%;
         margin-top: 50px;
-
     }
 
     .bar1,
@@ -137,27 +136,36 @@
         z-index: 12;
     }
 
-    .none {
-        display: none !important;
-    }
-
     .snip1198 {
         display: none !important;
-
     }
 
     .list {
         position: fixed;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         left: 0;
         top: 0;
-        background: rgba(51, 51, 51, 0.7);
-        z-index: 10;
-        background: #000000d4;
+        background: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(10px);
+        z-index: 90;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100%);
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 
-        //z-index: 3;
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+
         a,
         button {
             z-index: 11;
@@ -165,20 +173,39 @@
     }
 
     .listInner {
-        height: 50%;
+        height: 100%;
         display: flex;
         flex-direction: column;
-
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
     }
 
     .navbar ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
 
-    .active {
-        display: flex !important;
+        li {
+            padding-top: 0;
+            margin: 0;
+            max-width: none;
+            
+            a {
+                font-size: 2rem;
+                font-weight: 700;
+                color: rgba(255, 255, 255, 0.8);
+                transition: color 0.3s ease;
+
+                &.active {
+                    color: #FF6060;
+                }
+                
+                &:hover {
+                    color: #FF6060;
+                }
+            }
+        }
     }
 
     .mobileMenu {
