@@ -1,6 +1,17 @@
 export const projects = [
   {
     id: 1,
+    title: "Hidden Gems",
+    date: "Novembre 2025",
+    languages: ["React"],
+    infos:
+      "Création d'un site sur-mesure pour un acteur local",
+    img: "/img/projet-10.png",
+    mockup: "/img/projet-10.png",
+    link: "https://montreal-hidden-gems-854450491860.us-west1.run.app/",
+  },
+  {
+    id: 2,
     title: "Agatha Festival",
     date: "Décembre 2023",
     languages: ["React"],
@@ -11,7 +22,7 @@ export const projects = [
     //link: "https://agathafestival.fr/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Eurekia (SAAS)",
     date: "Janvier 2022",
     languages: ["React"],
@@ -22,7 +33,7 @@ export const projects = [
     link: "https://aissistant-mu.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Bulle de rêve",
     date: "Mars 2020",
     languages: ["Wordpress"],
@@ -33,7 +44,7 @@ export const projects = [
     //link: "http://bulledereve.fr/",
   },
   {
-    id: 4,
+    id: 5,
     title: "La voie tissée",
     date: "2023",
     languages: ["Wordpress"],
@@ -43,7 +54,7 @@ export const projects = [
     link: "http://lavoietissee.fr/",
   },
   {
-    id: 5,
+    id: 6,
     title: "ECARDSTORE",
     date: "2024",
     languages: ["Wordpress"],
