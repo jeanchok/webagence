@@ -51,7 +51,7 @@ export const projects = [
     infos: "Réalisation de l'intégralité d'un site web pour une tisserande.",
     img: "/img/projet-8.png",
     mockup: "/img/projet-8.png",
-    link: "http://lavoietissee.fr/",
+    //link: "http://lavoietissee.fr/",
   },
   {
     id: 6,
