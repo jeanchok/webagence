@@ -22,10 +22,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_9krjany",
-        "template_npw1bqt",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         form.current,
-        "Kk1GXDbI61romaMWa"
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
